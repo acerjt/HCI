@@ -2789,7 +2789,7 @@ fieldset:disabled a.btn {
 .btn-light {
     color: #212529;
     background-color: #f8f9fa;
-    border-color: #f8f9fa
+    border-color: #f8f9fa;
 }
 
 .btn-light:hover {
@@ -4454,7 +4454,7 @@ input[type=submit].btn-block {
 }
 
 .navbar-toggler-icon {
-    display: inline-block;
+    display: none;
     width: 1.5em;
     height: 1.5em;
     vertical-align: middle;
@@ -4468,6 +4468,15 @@ input[type=submit].btn-block {
     .navbar-expand-sm>.container-fluid {
         padding-right: 0;
         padding-left: 0
+    }
+    .navbar-toggler-icon {
+        display: inline-block;
+        width: 1.5em;
+        height: 1.5em;
+        vertical-align: middle;
+        content: "";
+        background: no-repeat center center;
+        background-size: 100% 100%
     }
 }
 
@@ -10044,10 +10053,6 @@ button.bg-dark:hover {
     white-space: nowrap
 }
 
-.text-left {
-    text-align: left!important
-}
-
 .text-right {
     text-align: right!important
 }
@@ -10263,8 +10268,8 @@ a.text-dark:hover {
 
 @media print {
     *,
-    ::after,
-    ::before {
+     ::after,
+     ::before {
         text-shadow: none!important;
         box-shadow: none!important
     }
