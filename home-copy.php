@@ -1,11 +1,11 @@
 <html>
 
 <head>
-    <base href="https://bootstrapstudio.io/demo/" bs-system-element="" bs-hidden="">
+    <!-- <base href="https://bootstrapstudio.io/demo/" bs-system-element="" bs-hidden=""> -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Untitled</title>
-    <link rel="stylesheet" href="./embed/bootstrap/4/default/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
     <style bs-system-element="" bs-hidden="">
         html::-webkit-scrollbar {
             height: 7px;
@@ -223,21 +223,21 @@
             height: 9.333333333333334px;
         }
     </style>
-    <link rel="stylesheet" href="./embed/animation/animate.min.css" bs-system-element="" bs-hidden="">
-    <link rel="stylesheet" href="./embed/animation/aos.min.css" bs-system-element="" bs-hidden="">
-    <link rel="stylesheet" bs-hidden="1" bs-system-element="1" href="./embed/fonts/fontawesome-all.min.css">
-    <link rel="stylesheet" bs-hidden="1" bs-system-element="1" href="./embed/fonts/font-awesome.min.css">
-    <link rel="stylesheet" bs-hidden="1" bs-system-element="1" href="./embed/fonts/ionicons.min.css">
-    <link rel="stylesheet" bs-hidden="1" bs-system-element="1" href="./embed/fonts/line-awesome.min.css">
-    <link rel="stylesheet" bs-hidden="1" bs-system-element="1" href="./embed/fonts/material-icons.min.css">
-    <link rel="stylesheet" bs-hidden="1" bs-system-element="1" href="./embed/fonts/simple-line-icons.min.css">
-    <link rel="stylesheet" bs-hidden="1" bs-system-element="1" href="./embed/fonts/typicons.min.css">
-    <link rel="stylesheet" href="./embed/fonts/fontawesome5-overrides.min.css" bs-system-element="" bs-hidden="">
+    <link rel="stylesheet" href="animate.min.css" bs-system-element="" bs-hidden="">
+    <link rel="stylesheet" href="aos.min.css" bs-system-element="" bs-hidden="">
+    <link rel="stylesheet" bs-hidden="1" bs-system-element="1" href="fontawesome-all.min.css">
+    <link rel="stylesheet" bs-hidden="1" bs-system-element="1" href="font-awesome.min.css">
+    <link rel="stylesheet" bs-hidden="1" bs-system-element="1" href="ionicons.min.css">
+    <link rel="stylesheet" bs-hidden="1" bs-system-element="1" href="line-awesome.min.css">
+    <link rel="stylesheet" bs-hidden="1" bs-system-element="1" href="material-icons.min.css">
+    <link rel="stylesheet" bs-hidden="1" bs-system-element="1" href="simple-line-icons.min.css">
+    <link rel="stylesheet" bs-hidden="1" bs-system-element="1" href="typicons.min.css">
+    <link rel="stylesheet" href="fontawesome5-overrides.min.css" bs-system-element="" bs-hidden="">
     <style>
         .highlight-clean {
             color: #313437;
             background-color: #fff;
-            padding: 50px 0;
+            padding: 20px 0;
         }
         
         .highlight-clean p {
@@ -266,9 +266,11 @@
         .highlight-clean .buttons {
             text-align: left;
         }
-        
+        .join-gobal .buttons{
+            text-align: center;
+        }
         .highlight-clean .buttons .btn {
-            padding: 16px 32px;
+            padding: 13px 32px;
             margin: 6px;
             border: 1px solid #4c9fbf;
             background: none;
@@ -276,7 +278,7 @@
             text-shadow: none;
             opacity: 0.9;
             text-transform: uppercase;
-            /* border-radius:5px; */
+            border-radius:0px;
             /* font-weight: bold; */
             font-size: 20px;
             letter-spacing: 0.4px;
@@ -284,7 +286,23 @@
             outline: none;
             background-color: #ddd;
         }
-        
+        .join-gobal .buttons .btn{
+            padding: 12px 32px;
+            margin: 6px;
+            border: 1px solid #4c9fbf;
+            background: none;
+            box-shadow: none;
+            text-shadow: none;
+            opacity: 0.9;
+            text-transform: uppercase;
+             border-radius:0px;
+            /* font-weight: bold; */
+            font-size: 18px;
+            letter-spacing: 0.4px;
+            line-height: 1;
+            outline: none;
+            background-color: #ddd;
+        }
         .highlight-clean .buttons .btn:hover {
             opacity: 1;
         }
@@ -305,6 +323,29 @@
             text-transform: none;
             color: #fff;
         }
+        .join-gobal .buttons .btn:hover {
+            opacity: 1;
+        }
+        
+        .join-gobal .buttons .btn:active {
+            transform: translateY(1px);
+        }
+        
+        .join-gobal .buttons .btn-light {
+            text-transform: none;
+            border: 1px solid #4c9fbf;
+            background-color: #fff;
+        }
+        
+        .join-gobal .buttons .btn-primary {
+            background-color: #4c9fbf;
+            text-transform: none;
+            color: #fff;
+        }
+        .join-gobal{
+            height:250px;
+        }
+        
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css?bsCacheToken=1575176343123">
     <style>
@@ -387,7 +428,7 @@
         }
         
         .projects-horizontal .item {
-            padding-top: 60px;
+            padding-top: 20px;
             min-height: 160px;
         }
         
@@ -470,18 +511,13 @@
         
         .team-boxed .item .name {
             font-weight: bold;
+            font-size:25px;
             margin-top: 28px;
             margin-bottom: 8px;
             color: inherit;
         }
         
-        .team-boxed .item .title {
-            text-transform: uppercase;
-            font-weight: bold;
-            color: #d0d0d0;
-            letter-spacing: 2px;
-            font-size: 13px;
-        }
+    
         
         .team-boxed .item .description {
             font-size: 15px;
@@ -655,7 +691,7 @@
         
         .team-boxed .container .intro h2 {
             font-size: 40px;
-            width: 760px;
+            width: 860px;
             text-align: center;
             /* width: 800px; */
             /* margin-left: 0px; */
@@ -685,10 +721,10 @@
             <div class="row people">
                 <div class="col-md-6 col-lg-4 item">
                     <div class="box">
-                        <p class="description"><img class="recent-order1" src="img/images/im_iphone.png" alt=""></p>
+                        <img class="recent-order1" src="img/images/im_iphone.jpg" alt="">
                     </div>
                     <div class="author">
-                        <img class="rounded-circle" src="blob:https://bootstrapstudio.io/0b78c8b5-d934-461c-b359-c13c604eb924">
+                        <img class="rounded-circle" src="img/avatar/av_1.jpg">
                         <h5 class="name">Ben Johnson</h5>
                         <p class="title">CEO of Company Inc.</p>
                     </div>
@@ -698,7 +734,7 @@
                         <p class="description">Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id.</p>
                     </div>
                     <div class="author">
-                        <img class="rounded-circle" src="blob:https://bootstrapstudio.io/0b78c8b5-d934-461c-b359-c13c604eb924">
+                        <img class="rounded-circle" src="img/avatar/av_2.jpg">
                         <h5 class="name">Carl Kent</h5>
                         <p class="title">Founder of Style Co.</p>
                     </div>
@@ -707,7 +743,7 @@
                     <div class="box">
                         <p class="description">Aliquam varius finibus est, et interdum justo suscipit. Vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p>
                     </div>
-                    <div class="author"><img class="rounded-circle" src="blob:https://bootstrapstudio.io/79d3e91a-8567-4f33-b416-e1a38e74fa2f">
+                    <div class="author"><img class="rounded-circle" src="img/avatar/av_3.jpg">
                         <h5 class="name">Emily Clark</h5>
                         <p class="title">Owner of Creative Ltd.</p>
                     </div>
@@ -727,110 +763,122 @@
             <div class="row projects">
                 <div class="col-sm-6 item">
                     <div class="row">
-                        <div class="col-md-12 col-lg-5">
-                            <a href="#"><img class="img-fluid" src="blob:https://bootstrapstudio.io/0f6c3b90-db4b-4d82-bc13-11f6a370d54c"></a>
-                        </div>
-                        <div class="col">
+                    <div class="col">
                             <h3 class="name"><span class="first-letter">1</span>Tell us about the item you are looking for</h3>
                             <p class="description">With TradeZ, you can get any item from around the world. To get started, create an order for a product you want and include details such as where a traveler can buy it and how much it costs.</p>
                         </div>
+                        <div class="col-md-12 col-lg-5">
+                            <a href="#"><img class="img-fluid" src="img/images/im_tell.jpg"></a>
+                        </div>
+                        
                     </div>
                 </div>
 
                 <div class="col-sm-6 item">
                     <div class="row">
-                        <div class="col-md-12 col-lg-5">
-                            <a href="#"><img class="img-fluid" src="blob:https://bootstrapstudio.io/277cf51c-26e7-4941-80ea-3f7ab28be06b"></a>
-                        </div>
-                        <div class="col">
+                    <div class="col">
                             <h3 class="name">Wait for travelers to make delivery offers</h3>
                             <p class="description">Once you publish your order, we’ll share it with our entire traveler community. Then, travelers heading to your city will bid to deliver it by making an offer.</p>
                         </div>
+                        <div class="col-md-12 col-lg-5">
+                            <a href="#"><img class="img-fluid" src="img/images/im_wait.jpg"></a>
+                        </div>
+                        
                     </div>
 
                 </div>
                 <div class="col-sm-6 item">
                     <div class="row">
-                        <div class="col-md-12 col-lg-5">
-                            <a href="#"><img class="img-fluid" src="blob:https://bootstrapstudio.io/277cf51c-26e7-4941-80ea-3f7ab28be06b"></a>
-                        </div>
-                        <div class="col">
-                            <h3 class="name">Wait for travelers to make delivery offers</h3>
-                            <p class="description">Once you publish your order, we’ll share it with our entire traveler community. Then, travelers heading to your city will bid to deliver it by making an offer.</p>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-sm-6 item">
-                    <div class="row">
-                        <div class="col-md-12 col-lg-5">
-                            <a href="#"><img class="img-fluid" src="blob:https://bootstrapstudio.io/277cf51c-26e7-4941-80ea-3f7ab28be06b"></a>
-                        </div>
-                        <div class="col">
+                    <div class="col">
                             <h3 class="name">Agree on a monetary reward for your traveler</h3>
-                            <p class="description">TradeZ auto-calculates all applicable taxes and fees, including the monetary reward you agree to pay your traveler for delivering your item. If your traveler doesn’t deliver your order for any reason, you will receive a full
-                                refund.
-                            </p>
+                            <p class="description">TradeZ auto-calculates all applicable taxes and fees, including the monetary reward you agree to pay your traveler for delivering your item. If your traveler doesn’t deliver your order for any reason, you will receive a full refund.</p>
                         </div>
+                        <div class="col-md-12 col-lg-5">
+                            <a href="#"><img class="img-fluid" src="img/images/im_agree.jpg"></a>
+                        </div>
+                        
                     </div>
 
                 </div>
+               
+                </div>
                 <div class="col-sm-6 item">
                     <div class="row">
-                        <div class="col-md-12 col-lg-5">
-                            <a href="#"><img class="img-fluid" src="blob:https://bootstrapstudio.io/277cf51c-26e7-4941-80ea-3f7ab28be06b"></a>
-                        </div>
-                        <div class="col">
+                    <div class="col">
                             <h3 class="name">Meet with your traveler and receive your item</h3>
                             <p class="description">Coordinate a time and public place to meet your traveler. When you receive your item, make sure to confirm delivery so that your traveler gets paid.</p>
                         </div>
+                        <div class="col-md-12 col-lg-5">
+                            <a href="#"><img class="img-fluid" src="img/images/im_meet.jpg"></a>
+                        </div>
+                       
                     </div>
 
                 </div>
             </div>
         </div>
     </div>
-    <div class="team-boxed">
-        <div class="container">
+    <div class="team-boxed" style="background-color:white">
+        <div class="container" >
             <div class="intro">
                 <h2 class="text-center">We pride ourselves on quality service</h2>
-                <p class="text-center">Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae.</p>
+                <p class="text-center">It’s safe, easy and a fun way to make money traveling the world.</p>
             </div>
             <div class="row people">
                 <div class="col-md-6 col-lg-4 item">
-                    <div class="box"><img class="rounded-circle" src="blob:https://bootstrapstudio.io/6b266c49-8aff-4422-84d5-0b137b7e3b34">
-                        <h3 class="name">Ben Johnson</h3>
-                        <p class="title">Musician</p>
-                        <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p>
-                        <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
+                    <div class="box"><img class="rounded-circle" src="img/icon/ic_secure.png">
+                        <h3 class="name">Secure Online Payments</h3>
+                        <p class="description">Your money is safe with Grabr every step of the way. Grabr uses a secure payment system and you have a money back guarantee.</p>
+                        
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 item">
-                    <div class="box"><img class="rounded-circle" src="blob:https://bootstrapstudio.io/79d3e91a-8567-4f33-b416-e1a38e74fa2f">
-                        <h3 class="name">Emily Clark</h3>
-                        <p class="title">Artist</p>
-                        <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p>
-                        <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
+                    <div class="box"><img class="rounded-circle" src="img/icon/ic_guareanteed.png">
+                        <h3 class="name">Guaranteed delivery</h3>
+
+                        <p class="description">If a traveler cancels your order or delivers an item in bad condition, we will issue a full refund and aim to match you with a new traveler. </p>
+                        
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 item">
-                    <div class="box"><img class="rounded-circle" src="blob:https://bootstrapstudio.io/0b78c8b5-d934-461c-b359-c13c604eb924">
-                        <h3 class="name">Carl Kent</h3>
-                        <p class="title">Stylist</p>
-                        <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p>
-                        <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
+                    <div class="box"><img class="rounded-circle" src="img/icon/ic_guareanteed.png">
+                        <h3 class="name">Multiple Payment Options</h3>
+
+                        <p class="description">To make your life easier, we accept a range of payment methods including Visa, MasterCard and American Express, with more options available soon. </p>
+                        
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 item">
+                    <div class="box"><img class="rounded-circle" src="img/icon/ic_no.png">
+                        <h3 class="name">No Hidden Fees</h3>
+                        <p class="description">For full transparency, Grabr uses machine learning to calculate all applicable taxes and fees before you publish your order, so you know exactly how much you are paying. </p>
+                        
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 item">
+                    <div class="box"><img class="rounded-circle" src="img/icon/ic_community.png">
+                        <h3 class="name">Community of Verified Shoppers and Travelers</h3>
+                        <p class="description">Trust is our top priority at Grabr, and we work hard to ensure that our community treats all members with the utmost respect. </p>
+                        
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 item">
+                    <div class="box"><img class="rounded-circle" src="img/icon/ic_24.png">
+                        <h3 class="name">24/7 Customer Care</h3>
+                        <p class="description">Our dedicated team of customer service professionals are on hand to resolve any issue that arises throughout the order and delivery process. </p>
+                        
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="highlight-clean">
-        <div class="container">
-            <div class="intro">
-                <h2 class="text-center">We pride ourselves on quality service</h2>
-                <p class="text-center">It’s safe, easy and a fun way to make money traveling the world. </p>
+    <div class="join-gobal"  style="background-image: url('img/images/im_join.jpg');">
+        <div class="container" >
+            <div class="intro" style="padding-Top:55px">
+                <h2 class="text-center" style="color:#fff">Join our global community</h2>
+              
             </div>
-            <div class="buttons"><a class="btn btn-primary" role="button" href="#">Primary</a><button class="btn btn-light" type="button">Secondary</button></div>
+            <div class="buttons"><a class="btn btn-primary" role="button" href="#">Shop overseas products</a><button class="btn btn-light" type="button">Make money traveling</button></div>
         </div>
     </div>
     <div class="photo-gallery"></div>
