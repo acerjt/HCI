@@ -224,6 +224,7 @@
         
         .container .row .col-md-6 .check {
             padding-left: 15px;
+            font-size:14px;
         }
         
         .container .row .col-md-6 .right {
@@ -242,6 +243,10 @@
             text-align: center;
         }
         
+        .container .row .col-md-12 .parse_button:hover {
+            opacity: 1;
+        }
+        
         .container .row .col-md-12 .parse_button .parse {
             padding-left: 10px;
             border-radius: 5px;
@@ -251,16 +256,18 @@
         }
         
         .container .row .col-md-12 .parse_button .btn_create {
-            padding: 8px 32px;
+            padding: 5px 32px;
             text-align: center;
-            height: 40px;
-            margin: 6px;
+            margin-left:15px;
+            height: 50px;
+            margin: 10px;
             border: 1px solid #4c9fbf;
+            border-radius:5px;
             background: #4c9fbf;
             box-shadow: none;
             text-shadow: none;
             opacity: 0.9;
-            font-size: inherit;
+            font-size: 20px;
             text-transform: uppercase;
             color: #fff;
             text-transform: none;
@@ -269,7 +276,11 @@
             outline: none;
             background-color: #4c9fbf;
         }
+        .container .row .col-md-12 .parse_button .btn_create:hover {
         
+            background-color: #3f89a8;
+            border-bottom:none;
+        }
         .highlight-phone .container .row .col-md-8 .intro .btn_create {
             padding: 8px 32px;
             text-align: center;
@@ -296,7 +307,12 @@
             opacity: 1;
         }
         
+        .highlight-phone .container .row .col-md-8 .intro .btn_create:active {
+            transform: translateY(1px);
+        }
+        
         .container .row .col-md-12 .how {
+            font-size:14px;
             color: #4c9fbf;
         }
         /* .highlight-phone .container .row .col-md-8 .intro {
@@ -311,9 +327,34 @@
         
          */
         
-        .container .row .col-md-4 .row .col-md-6 img {
-            width: 100px;
-            height: 100px;
+        .container .row .col-md-4 .row .col-md-4 img {
+            width: 80px;
+            height: 80px;
+        }
+        
+        .container .row .col-md-4 .row .col-md-4 {
+            padding-right: 0px;
+            padding-left: 0px;
+        }
+        
+        .container .row .col-md-4 .row .col-md-8 {
+            padding-right: 0px;
+            padding-left: 0px;
+        }
+        
+        .container .row .col-md-4 .row .col-md-8 .name {
+            padding-top: 15px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        
+        .container .row .col-md-4 .row .col-md-8 .description {
+            font-size: 15px;
+        }
+        
+        .container .row .col-md-4 .row .col-md-8 .learn {
+            font-size: 15px;
+            color: #4c9fbf;
         }
         
         @media (min-width: 768px) {
@@ -339,8 +380,8 @@
         
         @media (min-width: 768px) {
             .col-md-8 {
-                flex: 0 0 55.666667%;
-                max-width: 55.666667%;
+                flex: 0 0 66.666667%;
+                max-width: 66.666667%;
             }
         }
         
@@ -360,7 +401,7 @@
         .highlight-phone {
             color: #313437;
             background-color: #000;
-            padding: 50px 0 55px;
+            padding: 40px 0 40px;
             overflow: hidden;
         }
         
@@ -376,7 +417,7 @@
         
         .highlight-phone h2 {
             font-weight: bold;
-            margin-bottom: 35px;
+            margin-bottom: 15px;
             line-height: 1.5;
             padding-top: 0;
             margin-top: 0;
@@ -384,7 +425,7 @@
         }
         
         .highlight-phone .intro {
-            font-size: 18px;
+            font-size: 16px;
             max-width: 500px;
             line-height: 1.5;
         }
@@ -396,7 +437,7 @@
         }
         
         .highlight-phone .intro p {
-            margin-bottom: 35px;
+            margin-bottom: 15px;
         }
         
         .highlight-phone .intro .btn {
@@ -454,6 +495,30 @@
             width: 150px;
             height: 100px;
         }
+        
+        .container .row .col-md-12 {
+            padding-left: 0px;
+            margin-bottom: 10px;
+            margin-top: 15px;
+        }
+        
+        .container .row .col-md-12 .hot {
+            font-size: 20px;
+            color: #b6b5c0;
+            padding-left: 0px;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .container .row .col-md-3 {
+            padding-left: 0px;
+        }
+        .container .row .col-md-12 h2 {
+            font-size:40px;
+        }
+        .container .row .col-md-12 h2 {
+            font-size:40px;
+        }
     </style>
     </style>
     <link rel="stylesheet" href="animate.min.css" bs-system-element="" bs-hidden="">
@@ -475,7 +540,6 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-
                     <h2>Shop Products from USA and save up to 40%</h2>
                 </div>
             </div>
@@ -493,8 +557,6 @@
                         <img src="img/icon/ic_check.png" alt="">
                         <a class="check">Receive your product in 1–2 weeks</a>
                     </div>
-
-
 
                 </div>
             </div>
@@ -542,46 +604,44 @@
             </div>
             <div>
 
-                <div class="container">
+                <div class="container" style="background-color:#e5f3fb">
                     <div class="row">
                         <div class="col-md-4">
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-4">
                                     <img src="img/icon/ic_secure.PNG" alt="">
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-8">
                                     <h3 class="name">Secure Payments </h3>
-                                    <a class="description">Your payment is protected and never released to the traveler until you confirm delivery.</a>
-                                    <a class="learn">Learn more about Trust and Safety</a>
+                                    <a class="description">Your payment is protected and never released to the traveler until you confirm delivery.</a> <br>
+                                    <div><a class="learn">Learn more about Trust and Safety</a>
+                                        <img src="img/icon/ic_next_to.png" alt="">
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-4">
                                     <img src="img/icon/ic_guareanteed.PNG" alt="">
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-8">
                                     <h3 class="name">Guaranteed delivery</h3>
-                                    <a class="description">Your are protected from start to finish. If there is an issue with your order, you will get 100% money back or will received.</a>
+                                    <a class="description">Your are protected from start to finish. If there is an issue with your order, you will get 100% money back or will received.</a> <br>
                                     <a class="learn">Learn more about Money Back guarantee</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="row">
-                                <div class="col-md-6">
-                                    <div class="images">
-                                        <img src="img/icon/ic_24.PNG" alt="">
-                                    </div>
-
+                                <div class="col-md-4">
+                                    <img src="img/icon/ic_24.PNG" alt="">
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="des">
-                                        <h3 class="name">S24/7 Customer care</h3>
-                                        <a class="description">Customer support in your native language, within 24 hours.</a>
-                                        <a class="learn">Go to Help Center</a>
-                                    </div>
+                                <div class="col-md-8">
+                                    <h3 class="name">24/7 Customer care</h3>
+                                    <a class="description">Customer support in your native language, within 24 hours.</a><br>
+                                    <a class="learn">Go to Help Center</a>
+
 
                                 </div>
                             </div>
@@ -591,9 +651,9 @@
             </div>
 
             <div>
-                <div class="container">
+                <div class="container" style="margin-top:15px">
                     <div class="row">
-                        <div class="col-md-12"><a>TOP SHOP</a></div>
+                        <div class="col-md-12"><a class="hot">TOP SHOP</a></div>
                         <div class="col-md-3">
                             <img class="topshop" src="img/images/im_amazon.PNG" alt="">
                         </div>
@@ -610,9 +670,9 @@
                 </div>
             </div>
             <div>
-                <div class="container">
+                <div class="container" style="margin-top:15px">
                     <div class="row">
-                        <div class="col-md-12"><a>ELECTRICS</a></div>
+                        <div class="col-md-12"><a class="hot">ELECTRICS</a></div>
                         <div class="col-md-3">
                             <img class="topshop" src="img/images/im_apple.PNG" alt="">
                         </div>
@@ -630,9 +690,9 @@
             </div>
 
             <div>
-                <div class="container">
+                <div class="container" style="margin-top:15px">
                     <div class="row">
-                        <div class="col-md-12"><a>FASHION AND BEAUTY</a></div>
+                        <div class="col-md-12"><a class="hot">FASHION AND BEAUTY</a></div>
                         <div class="col-md-3">
                             <img class="topshop" src="img/images/im_macys.PNG" alt="">
                         </div>
@@ -650,9 +710,9 @@
             </div>
 
             <div>
-                <div class="container">
+                <div class="container" style="margin-top:15px">
                     <div class="row">
-                        <div class="col-md-12"><a>SHOES</a></div>
+                        <div class="col-md-12"><a class="hot">SHOES</a></div>
                         <div class="col-md-3">
                             <img class="topshop" src="img/images/im_nike.PNG" alt="">
                         </div>

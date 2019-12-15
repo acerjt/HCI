@@ -319,7 +319,6 @@
         
         .highlight-clean .buttons .btn-primary {
             background-color: #4c9fbf;
-            ;
             text-transform: none;
             color: #fff;
         }
