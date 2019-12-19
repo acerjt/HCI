@@ -339,25 +339,27 @@
             opacity: 0.2;
         }
         
-        .content .container .row .col-md-8 {
+        .content .container .row .col-md-7 {
             background-color: #fff;
             padding-top: 15px;
             border-radius: 5px;
+            margin-right:30px;
             border: 1px solid #e0e0e0;
+            margin-bottom:15px;
         }
         
-        .content .container .row .col-md-8 a {
+        .content .container .row .col-md-7 a {
             color: #000;
             font-size: 20px;
         }
         
-        .content .container .row .col-md-8 .des {
+        .content .container .row .col-md-7 .des {
             color: #828282;
             margin-top: 0px;
             font-size: 14px;
         }
         
-        .content .container .row .col-md-8 .parse {
+        .content .container .row .col-md-7 .parse {
             margin-top: 5px;
             margin-bottom: 15px;
             padding-top: 5px;
@@ -368,7 +370,7 @@
             text-align: center;
         }
         
-        .content .container .row .col-md-8 .ip_input {
+        .content .container .row .col-md-7 .ip_input {
             padding-left: 10px;
             border-radius: 5px;
             border: 1px solid #f2f2f2;
@@ -388,12 +390,12 @@
             margin-left: 15px;
         }
         
-        .content .container .row .col-md-8 .container .row img {
+        .content .container .row .col-md-7 .container .row img {
             width: 100px;
             height: 100px;
         }
         
-        .content .container .row .col-md-8 .product_image {
+        .content .container .row .col-md-7 .product_image {
             margin-top: 0px;
             margin-bottom: 5px;
             width: 200px;
@@ -402,7 +404,7 @@
             border-radius: 5px;
         }
         
-        .content .container .row .col-md-8 .reload_button {
+        .content .container .row .col-md-7 .reload_button {
             background-color: #4c9fbf;
             width: 40px;
             height: 40px;
@@ -449,7 +451,7 @@
             width: 320px;
         }
         
-        .content .container .row .col-md-8 .quantity img {
+        .content .container .row .col-md-7 .quantity img {
             width: 22px;
             height: 22px;
         }
@@ -476,7 +478,7 @@
             border-color: #3f89a8;
         }
         
-        .content .container .row .col-md-8 h4 {
+        .content .container .row .col-md-7 h4 {
             font-size: 25px;
         }
         
@@ -524,7 +526,7 @@
     <div class=" content " style="margin-top:15px ">
         <div class="container ">
             <div class="row ">
-                <div class="col-md-8 ">
+                <div class="col-md-7 ">
                     <h4>1. Review Product Details</h4>
                     <a href=" ">Product link</a><br>
                     <input class="ip_input " type="text " value="https://amabuy.vn/us/amazon/iPhone11-Pro-64(GB)... ">
