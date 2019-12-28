@@ -26,8 +26,8 @@
         }
         
         html {
-            -webkit-user-select: none;
-            user-select: none;
+            /* -webkit-user-select: none;
+            user-select: none; */
             overflow: auto !important;
         }
         
