@@ -61,7 +61,7 @@
 		}
 
 		/* Inline editing */
-
+/* 
 		[contenteditable=true] {
 			box-shadow:-1px -1px 1px rgba(17, 142, 232, 0.85), 
 				1px 1px 1px rgba(17, 142, 232, 0.85), 
@@ -81,7 +81,7 @@
 
 		[contenteditable=true] [contenteditable=false] {
 			box-shadow:0 0 0 1px rgba(17, 142, 232, 0.85);
-		}
+		} */
 
 		/* Preventing mouse events for embeds */
 

@@ -542,7 +542,7 @@
                             <div class="col-xs-2 col-half-offset " id="p2 "><img src="img/images/im_sendo.png " alt=" "></div>
                             <div class="col-xs-2 col-half-offset " id="p3 "><img src="img/images/im_lazada.jpg " alt=" "></div>
                             <div class="col-xs-2 col-half-offset " id="p4 "><img src="img/images/im_tiki.jpg " alt=" "></div>
-                            <div class="col-xs-2 col-half-offset " id="p5 "><img src="img/images/im_ebay.png " alt=" "></div>
+                            <div class="col-xs-2 col-half-offset " id="p5 "><img src="img/images/im_ebay1.png " alt=" "></div>
 
                         </div>
                     </div>
