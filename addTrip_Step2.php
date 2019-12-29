@@ -604,26 +604,7 @@
 
 <body style="background-color: #f2f2f2;">
 
-<div class="head">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="root">
-                        <div class="container">
-                            <ul class="progressbar">
-                                <li class="active">Add Trip</li>
-                                <li >Offer details</li>
-                                <li style="color:#bdbdbd">Verify number</li>
-                                <li style="color:#bdbdbd">Set up payout method</li>
-                                <li style="color:#bdbdbd">Verify complete</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
 
-            </div>
-        </div>
-    </div>
     <div class="content" style="margin-top:15px">
         <div class="container">
             <div class="row">

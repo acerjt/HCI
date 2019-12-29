@@ -328,33 +328,33 @@
         
          */
         
-        .container .row .col-md-4 .row .col-md-4 img {
+        .container .row .col-md-4 .row .col-md-3 img {
             width: 80px;
             height: 80px;
         }
         
-        .container .row .col-md-4 .row .col-md-4 {
+        .container .row .col-md-4 .row .col-md-3 {
             padding-right: 0px;
             padding-left: 0px;
         }
         
-        .container .row .col-md-4 .row .col-md-8 {
+        .container .row .col-md-4 .row .col-md-9 {
             padding-right: 0px;
             padding-left: 0px;
         }
         
-        .container .row .col-md-4 .row .col-md-8 .name {
+        .container .row .col-md-4 .row .col-md-9 .name {
             padding-top: 15px;
             font-size: 20px;
             font-weight: bold;
         }
         
-        .container .row .col-md-4 .row .col-md-8 .description {
-            font-size: 15px;
+        .container .row .col-md-4 .row .col-md-9 .description {
+            font-size: 13px;
         }
         
-        .container .row .col-md-4 .row .col-md-8 .learn {
-            font-size: 15px;
+        .container .row .col-md-4 .row .col-md-9 .learn {
+            font-size: 13px;
             color: #4c9fbf;
         }
         
@@ -380,9 +380,9 @@
         }
         
         @media (min-width: 768px) {
-            .col-md-8 {
-                flex: 0 0 66.666667%;
-                max-width: 66.666667%;
+            .col-md-9 {
+                flex: 0 0 73.666667%;
+                max-width: 73.666667%;
             }
         }
         
@@ -529,8 +529,9 @@
         }
         
         .container .row .col-md-6 img {
-            width: 500px;
-            height: 400px;
+            width: 540px;
+            height:370px;
+            margin-bottom:40px;
         }
         
         .container .row .col-md-6 .parse_button .btn_create {
@@ -542,17 +543,17 @@
             padding-left: 10px;
             border: 1px solid #bdbdbd;
             height: 40px;
-            width: 500px;
+            width: 540px;
             margin-top: -2px;
             /* margin-bottom: 1px; */
         }
         
         .container .row .col-md-6 .input {
             border: 1px solid #bdbdbd;
-            width: 250px;
+            width: 270px;
             height: 40px;
             font-size: 16px;
-            padding-left: 5px;
+            padding-left: 10px;
             border-top-left-radius: 5px;
         }
         
@@ -565,6 +566,7 @@
             border-image: none;
             margin-left: 5px;
         }
+      
     </style>
     </style>
     <link rel="stylesheet" href="animate.min.css" bs-system-element="" bs-hidden="">
@@ -589,12 +591,12 @@
                     <h2>Earn $200+ USD every time you travel abroad</h2>
                     <a class="des" href="">Deliver products to international shoppers and cut your travel costs in half.
  Average earnings per trip.</a>
-                    <div>
+                    <div style="display:flex;">
                         <div class="input">
                             <a class="title">From</a>
                             <input class="parse" type="text" placeholder="City or Country">
                         </div>
-                        <div class="input" style="border-top-left-radius:none; border-top-right-radius: 5px;">
+                        <div class="input" style="border-top-left-radius:0px; border-top-right-radius: 5px; margin-left:-1px;width:271px;">
                             <a class="title">To</a>
                             <input class="parse" type="text" placeholder="City or Country">
                         </div>
@@ -604,13 +606,15 @@
                         <input class="parse" type="text" placeholder="Travel date" title="From">
 
                         <br>
-                        <button class="btn_create" type="button" href="#">Add trip</button>
+                        <button class="btn_create" style="border-top-left-radius: 0px;border-top-right-radius: 0px; width: 540px; padding:0px 120px; margin-top=-1px;" type="button" href="#">Add trip</button>
 
                     </div>
-                    <div style="margin-top:5px;">
-                        <a class="des" href="" style="color:4c9fbf">How it works ></a>
+                    <div style="margin-top:5px;height:30px;display:flex;">
+                        <div style="height:30px; flex-grow: 1;">
+                        <a class="des" href="" style="color:4c9fbf">How it works ></a></div>
+                        <div  style="height:30px; float:right;">
                         <a class="des" href="" style="color:#828282">Get notified about new orders</a>
-                        <img style="width:80px; height:43px;" src="img/icon/ic_notification.PNG" alt="">
+                        <img style="width:50px; height:30px; margin-bottom: 0px;" src="img/icon/ic_notification.PNG" alt=""></div>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -626,43 +630,41 @@
 
 
 
-            <div class="container" style="background-color:#e5f3fb">
+            <div class="container" style="background-color:#e5f3fb; padding-bottom:15px;">
                 <div class="row">
                     <div class="col-md-4">
                         <div class="row">
-                            <div class="col-md-4">
+                            <div class="col-md-3">
                                 <img src="img/icon/ic_secure.PNG" alt="">
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-md-9">
                                 <h3 class="name">Secure Payments </h3>
                                 <a class="description">Your payment is protected and never released to the traveler until you confirm delivery.</a> <br>
-                                <div><a class="learn">Learn more about Trust and Safety</a>
-                                    <img src="img/icon/ic_next_to.png" alt="">
-                                </div>
+                               <br> <a class="learn">Learn more about Trust and Safety.  ></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="row">
-                            <div class="col-md-4">
+                            <div class="col-md-3">
                                 <img src="img/icon/ic_guareanteed.PNG" alt="">
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-md-9">
                                 <h3 class="name">Guaranteed delivery</h3>
-                                <a class="description">Your are protected from start to finish. If there is an issue with your order, you will get 100% money back or will received.</a> <br>
-                                <a class="learn">Learn more about Money Back guarantee</a>
+                                <a class="description">Your are protected from start to finish. If there is an issue with your order, you will get 100% money back or will received.  ></a> <br>
+                                <a class="learn">Learn more about Money Back guarantee.  ></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="row">
-                            <div class="col-md-4">
+                            <div class="col-md-3">
                                 <img src="img/icon/ic_24.PNG" alt="">
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-md-9">
                                 <h3 class="name">24/7 Customer care</h3>
                                 <a class="description">Customer support in your native language, within 24 hours.</a><br>
-                                <a class="learn">Go to Help Center</a>
+                               <br> <a class="learn">Go to Help Center  ></a>
 
 
                             </div>

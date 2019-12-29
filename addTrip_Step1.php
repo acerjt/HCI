@@ -218,7 +218,7 @@
             cursor: inherit;
         }
         
-        .container .row .col-md-12 h2 {
+        .container .row .col-md-9 h2 {
             text-align: center;
         }
         
@@ -235,7 +235,7 @@
             text-align: left;
         }
         
-        .container .row .col-md-12 .parse_button {
+        .container .row .col-md-9 .parse_button {
             margin-top: 15px;
             display: block;
             margin: 0 auto;
@@ -243,11 +243,11 @@
             text-align: center;
         }
         
-        .container .row .col-md-12 .parse_button:hover {
+        .container .row .col-md-9 .parse_button:hover {
             opacity: 1;
         }
         
-        .container .row .col-md-12 .parse_button .parse {
+        .container .row .col-md-9 .parse_button .parse {
             padding-left: 10px;
             border-radius: 5px;
             border: 1px solid #4c9fbf;
@@ -255,12 +255,10 @@
             width: 500px;
         }
         
-        .container .row .col-md-12 .parse_button .btn_create {
+        .container .row .col-md-9 .parse_button .btn_create {
             padding: 5px 32px;
             text-align: center;
-            margin-left: 15px;
             height: 50px;
-            margin: 10px;
             border: 1px solid #4c9fbf;
             border-radius: 5px;
             background: #4c9fbf;
@@ -277,7 +275,7 @@
             background-color: #4c9fbf;
         }
         
-        .container .row .col-md-12 .parse_button .btn_create:hover {
+        .container .row .col-md-9 .parse_button .btn_create:hover {
             background-color: #3f89a8;
             border-bottom: none;
         }
@@ -312,7 +310,7 @@
             transform: translateY(1px);
         }
         
-        .container .row .col-md-12 .how {
+        .container .row .col-md-9 .how {
             font-size: 14px;
             color: #4c9fbf;
         }
@@ -346,7 +344,7 @@
         .container .row .col-md-4 .row .col-md-8 .name {
             padding-top: 15px;
             font-size: 20px;
-            font-weight: bold;
+            font-weight: 500;
         }
         
         .container .row .col-md-4 .row .col-md-8 .description {
@@ -386,6 +384,16 @@
             }
         }
         
+        @media (max-width: 576px) {
+            /* .col-md-8 {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+            .highlight-phone{
+                width:576px;
+            } */
+        }
+        
         .container .row .col-md-4 .row .col-md-6 .description {
             font-size: 16px;
         }
@@ -394,7 +402,7 @@
             color: #4c9fbf;
         }
         
-        .container .row .col-md-3 .topshop {
+        .container .row .col-md-2 .topshop {
             width: 270px;
             height: 270px;
         }
@@ -430,6 +438,7 @@
             font-size: 16px;
             max-width: 500px;
             line-height: 1.5;
+            margin-left: 100px;
         }
         
         @media (max-width:767px) {
@@ -498,14 +507,18 @@
             height: 100px;
         }
         
-        .container .row .col-md-12 {
-            padding-left: 15px;
-            padding-top: 15px;
+        .container .row .col-md-9 {
             margin-bottom: 10px;
             margin-top: 15px;
+            margin-left: 50px;
+            margin-right: 50px;
+            height: auto;
+            margin: 15 auto;
+            padding: 0px 35px 0 35px;
+            position: relative;
         }
         
-        .container .row .col-md-12 .hot {
+        .container .row .col-md-9 .hot {
             font-size: 20px;
             color: #b6b5c0;
             padding-left: 0px;
@@ -513,15 +526,15 @@
             margin-bottom: 10px;
         }
         
-        .container .row .col-md-3 {
+        .container .row .col-md-2 {
             padding-left: 0px;
         }
         
-        .container .row .col-md-12 h2 {
+        .container .row .col-md-9 h2 {
             font-size: 40px;
         }
         
-        .container .row .col-md-12 h2 {
+        .container .row .col-md-9 h2 {
             font-size: 40px;
         }
         
@@ -546,16 +559,17 @@
         
         .money {
             color: #fff;
-            font-size: 20px;
+            font-size: 23px;
             font-weight: bold;
         }
         
-        .container .row .col-md-3 .title {
+        .container .row .col-md-2 .title {
             font-size: 16px;
             color: #4c9fbf;
             padding-bottom: 5px;
+            padding-top: 10px;
             text-align: center;
-            border-bottom: 2px solid #4c9fbf;
+            /* border-bottom: 2px solid #4c9fbf; */
         }
         
         .filter {
@@ -571,84 +585,82 @@
         
         .name {
             font-size: 20px;
-            font-weight: bold;
+            font-weight: 500;
             color: #000;
+            margin-top: 15px;
         }
         
         .time {
             font-size: 14px;
             color: #828282;
+            margin-left: 15px;
+            margin-top: 22px;
         }
         
         .content {
             background-color: #f2f2f2;
         }
         
-        .col-md-12 {
-            background-color: #fff;
+        .col-md-9 {
+            background-color: #f2f2f2;
             border-radius: 5px;
-            width: 500px;
-            height: 700px;
             padding-left: 15px;
         }
         
-        .container .row .col-md-12 .request img {
+        .container .row .col-md-9 .request img {
             max-width: 50px;
             float: left;
             margin-right: 15px;
         }
         
-        .content .container .row .col-md-12 .product_image {
-            margin-top: 5px;
-            margin-bottom: 5px;
-            width: 200px;
-            height: 200px;
-            border: 1px solid #bdbdbd;
-            border-radius: 5px;
+        .content .container .row .col-md-9 .product_image {
+            margin-left: 10px;
+            width: 180px;
+            height: 260px;
         }
         
-        .content .container .row .col-md-12 .name-product {
+        .content .container .row .col-md-9 .name-product {
             font-size: 20px;
             color: black;
-            margin-left: 15px;
-            font-weight: bold;
+            font-weight: 600;
         }
         
-        .content .container .row .col-md-12 .title {
+        .content .container .row .col-md-9 .title {
             font-size: 16px;
             color: #828282;
             font-weight: normal;
             padding-right: 10px;
         }
         
-        .content .container .row .col-md-12 .inside {
+        .content .container .row .col-md-9 .inside {
             font-size: 16px;
             color: black;
             font-weight: normal;
         }
         
-        .content .container .row .col-md-12 .panel {
-            margin-top: 0px;
+        .content .container .row .col-md-9 .panel {
+            margin-top: 15px;
             margin-bottom: 15px;
-            width: 300px;
-            height: 50px;
+            width: 500px;
+            height: 62px;
             background-color: #f2f2f2;
             border: 1px solid #f2f2f2;
             border-radius: 5px;
-            padding-left: 5px;
+            padding-left: 15px;
             padding-top: 5px;
         }
         
-        .container .row .col-md-12 .btn_create {
-            padding: 3px 220px;
+        .container .row .col-md-9 .btn_create {
+            padding: 3px 200px;
         }
         
         .btn_create {
             padding: 5px 32px;
             text-align: center;
-            margin-left: 15px;
+            width: 500px;
             height: 40px;
-            margin: 10px;
+            margin-top: 15px;
+            margin-bottom: 15px;
             border: 1px solid #4c9fbf;
             border-radius: 5px;
             background: #4c9fbf;
@@ -668,6 +680,35 @@
         .btn_create:hover {
             background-color: #3f89a8;
             border-bottom: none;
+        }
+        
+        hr {
+            margin-top: 5px;
+            margin-bottom: 0px;
+            border: 0;
+            border-top: 2px solid #4c9fbf;
+            width: 63;
+        }
+        
+        .new {
+            background-color: #fff;
+            padding: 15px 15px 0px 15px;
+            border-radius: 5px;
+            /* border: 1px solid #bdbdbd; */
+            margin-bottom: 30px;
+        }
+        
+        .container .row .col-md-8 .col-md-3 .title {
+            color: #4c9fbf;
+        }
+        
+        .container .row .col-md-8 .col-md-4 .title {
+            color: #4c9fbf;
+        }
+        
+        .row {
+            margin-left: 0px;
+            margin-right: 0px;
         }
     </style>
     </style>
@@ -690,21 +731,23 @@
 
         <div class="highlight-phone">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-8">
+                <div class="row" style="display:flex;">
+                    <div class="col-md-8" style="flex-grow: 1;">
                         <div class="intro">
                             <h2>America Cayon, CA, US - Ho Chi Minh City, VN, November 19</h2>
 
                             <button class="btn-setting">  Trip settings</button></div>
                     </div>
-                    <div class="col-md-4">
-                        <a class="money" href="">$0</a>
+                    <div class="col-md-4" style="float: right;text-align:right; padding-right:100px; ">
+                        <div class="money"> $0</div>
+
+                        <div class="des">Your total earnings</div>
+
                         <br>
-                        <a href="" class="des">Your total earnings</a>
-                        <br>
-                        <a class="money" href="">$0</a>
-                        <br>
-                        <a href="" class="des">Total value of items</a>
+                        <div class="money"> $0</div>
+
+                        <div class="des">Total value of items</div>
+
 
 
                     </div>
@@ -715,66 +758,197 @@
 
 
         <div>
-            <div class="container" style="margin-top:15px; margin-bottom: 15px;">
-                <div class="row">
-                    <div class="col-md-3">
-                        <a href="" class="title">8 Orders</a>
+            <div class="container" style="margin-top">
+                <div class="row" style="width:600px;  margin: 0 auto;">
+                    <div class="col-md-8" style="display:flex; margin: 0 auto;">
+                        <div class="col-md-3">
+                            <div class="title">8 Orders</div>
+                            <hr>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="title" style="border-bottom: none;">0 Offers</div>
+                        </div>
+                        <div class=" col-md-4 ">
+                            <div class="title " style="border-bottom: none; ">0 To deliver</div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="title " style="border-bottom: none; ">0 Delived</div>
+                        </div>
                     </div>
-                    <div class="col-md-3">
-                        <a href="" class="title" style="border-bottom: none;">0 Offers</a>
-                    </div>
-                    <div class="col-md-3">
-                        <a href="" class="title" style="border-bottom: none;">0 To deliver</a>
-                    </div>
-                    <div class="col-md-3 ">
-                        <a href="" class="title" style="border-bottom: none;">0 Delived</a>
-                    </div>
+
                 </div>
             </div>
         </div>
-        <div class="content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8" style="margin-top:15px;">
-                        <a href="" style="color:#000; font-size:20px;">ORDERS AVAILABLE FOR DELIVERY</a>
-                    </div>
-                    <div class="col-md-4" style="margin-top:15px;">
-                        <button href="" class="filter">Filter</button>
-                        <button href="" class="filter">Sorting</button>
-                    </div>
-                </div>
-            </div>
+        <div class="content ">
 
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="request">
-                            <img class="rounded-circle " src="img/avatar/av_1.jpg ">
-                            <a href=" " class="name">Tung Nguyen</a>
-                            <a href=" " class="time ">December 23, 2019</a>
-                        </div>
-                        <br>
-                        <img class="product_image" src="img/images/im_iphone11_ebay.png" alt="">
-                        <a class="name-product" href="">Buy Simple Mobie - Apple iPhone 11 Pro (64KB) - Space Gray from Amazon.s</a>
-                        <div class="panel-1">
-                            <a class="title" href="">Delivery To   </a>
-                            <a class="inside" href="">Ho Chi Minh City, VN</a>
-                            <a class="title" href="">From   </a>
-                            <a class="inside" href="">United State of America</a><br>
 
-                            <a class="title" href="">Before   </a>
-                            <a class="inside" href="">December 24, 2019</a><br>
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-md-9  ">
+                        <div class="row" style="display:flex; margin-bottom:15px;">
+                            <div class="col-md-8 ">
+                                <div style="color:#000; font-size:20px; ">ORDERS AVAILABLE FOR DELIVERY</div>
+                            </div>
+                            <div class="col-md-4 " style=" display:flex; padding-right:0px; text-align:right ">
+                                <button class="filter ">Filter</button>
+                                <button class="filter ">Sorting</button>
+                            </div>
                         </div>
-                        <div class="panel">
-                            <a class="title" href="">Where to buy   </a>
-                            <a class="inside" style="color:#4c9fbf">www.amabuy.com</a><br>
-                            <a class="title" href="">Price for 1 product</a>
-                            <a class="inside" href="">$ 400</a><br>
+                        <div class="new">
+                            <div class="request" style="margin-left: 30px; margin-bottom:15px;">
 
+                                <div class="col-md-12" style="display:flex;">
+                                    <img class="rounded-circle " src="img/avatar/av_1.jpg ">
+                                    <div class="name ">Tùng Nguyễn</div>
+                                    <div class="time ">December 23, 2019</div>
+                                </div>
+                            </div>
+
+
+                            <div style="display:flex;">
+                                <div class="col-md-3" style=" padding-left: 0px; margin-right:35px;">
+                                    <img class="product_image " src="img/images/im_product-detail.jpg " alt=" ">
+                                </div>
+
+                                <div class="col-md-8" style="padding-right:0px;">
+                                    <div class="name-product ">Buy Simple Mobie - Apple iPhone 11 Pro (64GB)</div>
+                                    <div class="panel-1" style="display:flex; margin-top:5px;">
+                                        <div class="title ">Delivery To </div>
+                                        <div class="inside ">Ho Chi Minh City, VN</div>
+                                        <div class="title" style="margin-left:20px;">From </div>
+                                        <div class="inside ">United State of America</div><br>
+
+                                    </div>
+                                    <div style="display:flex;">
+                                        <div class="title ">Before </div>
+                                        <div class="inside ">December 24, 2019</div><br></div>
+
+                                    <div class="panel">
+                                        <div style="display:flex;">
+                                            <div class="title ">Where to buy </div>
+                                            <div class="inside " style="color:#4c9fbf ">www.amabuy.com</div><br>
+                                        </div>
+                                        <div style="display:flex;">
+                                            <div class="title ">Price for 1 product</div>
+                                            <div class="inside ">$ 400</div><br>
+                                        </div>
+
+
+
+                                    </div>
+                                    <div style="display:flex;">
+                                        <div class="inside" style="flex-grow: 1;">Traveler reward</div>
+                                        <div style="font-size:20px; font-weight: 600;float: right; ">$ 15</div>
+                                    </div>
+
+                                    <button class="btn_create " type="button " href="# ">Make Offer</button>
+                                </div>
+                            </div>
                         </div>
-                        <a href="" class="inside">Traveler reward</a>
-                        <a href="" class="name" style="font-weight: bold;">$ 10</a> <br>
-                        <button class="btn_create" type="button" href="#">Make Offer</button>
+
+                        <!-- <div class="new">
+                            <div class="request" style="margin-left: 30px; margin-bottom:15px;">
+                                <img class="rounded-circle " src="img/avatar/av_2.jpg ">
+                                <div style="display:flex;">
+                                    <div class="name ">Toàn Phan</div>
+                                    <div class="time ">December 24, 2019</div>
+                                </div>
+                            </div>
+
+
+                            <div style="display:flex;">
+                                <div class="col-md-3" style=" padding-left: 0px; margin-right:35px;">
+                                    <img class="product_image " src="img/images/im_nike.jpg " alt=" ">
+                                </div>
+
+                                <div class="col-md-8" style="padding-right:0px;">
+                                    <div class="name-product ">Buy Simple Mobie - Apple iPhone 11 Pro (64GB)</div>
+                                    <div class="panel-1" style="display:flex; margin-top:5px;">
+                                        <div class="title ">Delivery To </div>
+                                        <div class="inside ">Ho Chi Minh City, VN</div>
+                                        <div class="title" style="margin-left:20px;">From </div>
+                                        <div class="inside ">United State of America</div><br>
+
+                                    </div>
+                                    <div style="display:flex;">
+                                        <div class="title ">Before </div>
+                                        <div class="inside ">December 24, 2019</div><br></div>
+
+                                    <div class="panel">
+                                        <div style="display:flex;">
+                                            <div class="title ">Where to buy </div>
+                                            <div class="inside " style="color:#4c9fbf ">www.amabuy.com</div><br>
+                                        </div>
+                                        <div style="display:flex;">
+                                            <div class="title ">Price for 1 product</div>
+                                            <div class="inside ">$ 400</div><br>
+                                        </div>
+
+
+
+                                    </div>
+                                    <div style="display:flex;">
+                                        <div class="inside" style="flex-grow: 1;">Traveler reward</div>
+                                        <div style="font-size:20px;font-weight: 600;float: right; ">$ 15</div>
+                                    </div>
+
+                                    <button class="btn_create " type="button " href="# ">Make Offer</button>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="new">
+                            <div class="request" style="margin-left: 30px; margin-bottom:15px;">
+                                <img class="rounded-circle " src="img/avatar/av_3.jpg ">
+                                <div style="display:flex;">
+                                    <div class="name ">Dung N Nguyễn</div>
+                                    <div class="time ">December 23, 2019</div>
+                                </div>
+                            </div>
+
+
+                            <div style="display:flex;">
+                                <div class="col-md-3" style=" padding-left: 0px; margin-right:35px;">
+                                    <img class="product_image " src="img/images/im_nikon.jpg " alt=" ">
+                                </div>
+
+                                <div class="col-md-8" style="padding-right:0px;">
+                                    <div class="name-product ">Buy Simple Mobie - Apple iPhone 11 Pro (64GB)</div>
+                                    <div class="panel-1" style="display:flex; margin-top:5px;">
+                                        <div class="title ">Delivery To </div>
+                                        <div class="inside ">Ho Chi Minh City, VN</div>
+                                        <div class="title" style="margin-left:20px;">From </div>
+                                        <div class="inside ">United State of America</div><br>
+
+                                    </div>
+                                    <div style="display:flex;">
+                                        <div class="title ">Before </div>
+                                        <div class="inside ">December 24, 2019</div><br></div>
+
+                                    <div class="panel">
+                                        <div style="display:flex;">
+                                            <div class="title ">Where to buy </div>
+                                            <div class="inside " style="color:#4c9fbf ">www.amabuy.com</div><br>
+                                        </div>
+                                        <div style="display:flex;">
+                                            <div class="title ">Price for 1 product</div>
+                                            <div class="inside ">$ 400</div><br>
+                                        </div>
+
+
+
+                                    </div>
+                                    <div style="display:flex;">
+                                        <div class="inside" style="flex-grow: 1;">Traveler reward</div>
+                                        <div style="font-size:20px;font-weight: 600;float: right; ">$ 25</div>
+                                    </div>
+
+                                    <button class="btn_create " type="button " href="# ">Make Offer</button>
+                                </div>
+                            </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
