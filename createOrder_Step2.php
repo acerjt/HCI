@@ -494,7 +494,7 @@
         .content .container .row .col-md-4 .buttons a {
             font-size: 20px;
             font-weight: normal;
-            height: 40px;
+            /* height: 40px; */
             width: 100%;
             color: #fff;
             text-align: center;
@@ -538,7 +538,7 @@
             background: #4c9fbf;
         }
 
-        .progressbar li.active+li:before {
+        .progressbar li.fly:before {
             border-color: #4c9fbf;
             background-color: #4c9fbf;
             background: url(img/icon/ic_fly.png);
@@ -553,6 +553,14 @@
             .col-md-4 {
                 padding-right: 0px;
                 padding-left: 0px;
+            }
+
+            .delivery-container {
+                display: flex;
+            }
+
+            .delivery-infor {
+                margin: auto;
             }
         }
 
@@ -571,6 +579,10 @@
                 min-height: 1px;
                 padding-right: 15px;
                 padding-left: 15px;
+            }
+
+            .delivery-container {
+                display: initial;
             }
         }
 
@@ -594,7 +606,7 @@
                         <div class="container">
                             <ul class="progressbar">
                                 <li class="active">Product details</li>
-                                <li>Delivery details</li>
+                                <li class="fly">Delivery details</li>
                                 <li style="color:#bdbdbd">Summary</li>
 
                             </ul>
@@ -646,17 +658,19 @@
                     <div class="panel-top" style="margin-bottom: 15px">
                         <a href=" ">Buy Simple Mobie - Apple iPhone 11 Pro (64KB) - Space Gray from Amazon.s</a><br>
                         <hr>
-                        <div class="delivery-infor" style="display: flex">
-                            <div class="title" s>
-                                <div>
-                                    From
+                        <div class="delivery-container">
+                            <div class="delivery-infor" style="display: flex">
+                                <div class="title" s>
+                                    <div>
+                                        From
+                                    </div>
                                 </div>
+                                <div class="inside">United State of America</div>
                             </div>
-                            <div class="inside">United State of America</div>
-                        </div>
-                        <div class="delivery-infor" style="display: flex">
-                            <div class="title">To</div>
-                            <span class="inside">Ho Chi Minh City, VN</span>
+                            <div class="delivery-infor" style="display: flex">
+                                <div class="title">To</div>
+                                <span class="inside">Ho Chi Minh City, VN</span>
+                            </div>
                         </div>
                         <hr>
                         <div style="display: flex">
