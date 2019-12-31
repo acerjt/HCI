@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Untitled</title>
-    <link rel="stylesheet" href="bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="bootstrap.min.css"> -->
     <style bs-system-element="" bs-hidden="">
         html::-webkit-scrollbar {
             height: 7px;
@@ -444,9 +444,11 @@
             background-color: #fff;
             padding-top: 15px;
             padding-left: 15px;
+            padding-bottom: 15px;
+            padding-right: 15px;
             border-radius: 5px;
             border: 1px solid #e0e0e0;
-            height: 120px;
+            /* height: 120px; */
         }
 
         .content .container .row .col-md-4 a {
@@ -501,7 +503,7 @@
 
         .content .container .row .col-md-8 .panel {
             margin-top: 0px;
-            margin-bottom: 15px;
+            /* margin-bottom: 15px; */
             /* width: 300px;
             height: 80px; */
             background-color: #f2f2f2;
@@ -541,7 +543,7 @@
         .content .container .row .col-md-4 .buttons a {
             font-size: 20px;
             font-weight: normal;
-            height: 40px;
+            /* height: 40px; */
             width: 100%;
             color: #fff;
             text-align: center;
@@ -549,9 +551,16 @@
 
         .content .container .row .col-md-4 img {
             max-width: 40px;
-            float: left;
-            margin-left: -6px;
-            margin-top: -5px;
+            /* float: left; */
+            margin-left: -16px;
+            /* margin-top: -5px; */
+        }
+
+        .content .container .row .col-md-4 img:first-child {
+            /* max-width: 40px; */
+            /* float: left; */
+            /* margin-left: -6px; */
+            margin-left: 0px;
         }
 
         .btn-primary:hover {
@@ -576,6 +585,76 @@
             padding-top: 15px;
         }
 
+        
+
+
+        .content .container .row .col-md-8 {
+            background-color: #fff;
+            padding-top: 15px;
+            border-radius: 5px;
+            border: 1px solid #e0e0e0;
+            margin-bottom: 15px;
+            /* height: 400px; */
+        }
+
+        @media (min-width: 576px) {
+            .before {
+                display: block;
+            }
+
+            .delivery-before {
+                display: none;
+            }
+
+            .travel-ava {
+                margin: 12px 133px;
+            }
+
+            .col-md-4 {
+                padding: unset;
+            }
+            .delivery-container{
+                display: flex;
+            }
+            .delivery-infor{
+                margin: auto;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .col-md-8 {
+                -webkit-box-flex: 0;
+                -ms-flex: 0 0 66.666667%;
+                flex: 0 0 52%;
+                max-width: 66.666667%;
+                margin-left: 100px;
+            }
+
+            .before {
+                display: none;
+            }
+
+            .delivery-before {
+                display: block;
+            }
+
+            .travel-ava {
+                margin: 12px 38px;
+            }
+
+            .col-md-4 {
+                padding-right: 15px;
+                padding-left: 15px;
+            }
+            .delivery-container{
+                display: initial;
+            }
+        }
+
+        .content .container .row .col-md-4 .buttons {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
         .progressbar li {
             float: left;
             color: #4c9fbf;
@@ -598,39 +677,15 @@
             background: #4c9fbf;
         }
 
-        .progressbar li.active+li:before {
+        .progressbar li.fly:before {
             border-color: #4c9fbf;
             background-color: #4c9fbf;
-            background: url(img/icon/ic_checked.png);
+            background: url(img/icon/ic_fly.png);
             background-repeat: no-repeat;
             color: transparent;
             background-position: 50% 50%;
         }
 
-
-        .content .container .row .col-md-8 {
-            background-color: #fff;
-            padding-top: 15px;
-            border-radius: 5px;
-            border: 1px solid #e0e0e0;
-            margin-bottom: 15px;
-            /* height: 400px; */
-        }
-
-        @media (min-width: 768px) {
-            .col-md-8 {
-                -webkit-box-flex: 0;
-                -ms-flex: 0 0 66.666667%;
-                flex: 0 0 52%;
-                max-width: 66.666667%;
-                margin-left: 100px;
-            }
-        }
-
-        .content .container .row .col-md-4 .buttons {
-            margin-top: 15px;
-            margin-bottom: 15px;
-        }
     </style>
     <style></style>
     <style bs-system-element="" bs-hidden=""></style>
@@ -646,7 +701,7 @@
                             <ul class="progressbar">
                                 <li class="active">Product details</li>
                                 <li class="active">Delivery details</li>
-                                <li class="active">Summary</li>
+                                <li class="fly">Summary</li>
 
                             </ul>
                         </div>
@@ -664,12 +719,12 @@
                     <div class="panel-content">
                         <h3 style="font-weight: bold">3. Your order summary</h3>
                         <div class="des">Review your order summary below</div>
-                        <div style="display: flex">
+                        <div style="display: flex;margin-bottom: 5px">
 
                             <img class="product_image" src="img/images/im_iphone11_ebay.png" alt="">
                             <div style="display: flex;flex-direction: column;margin-left:15px">
 
-                                <div class="name" style="margin-bottom: 15px">Buy Simple Mobie - Apple iPhone 11 Pro (64KB) - Space Gray from Amazon.s</div>
+                                <div class="name" style="margin-bottom: 5px">Buy Simple Mobie - Apple iPhone 11 Pro (64KB) - Space Gray from Amazon.s</div>
                                 <div>
                                     <div class="panel" style="font-size: 20px">
                                         <div style="display: flex">
@@ -683,8 +738,8 @@
                                             <div class="inside">Ho Chi Minh City, VN</div>
                                         </div>
                                         <div style="display: flex">
-
-                                            <div class="title">Delivery before </div>
+                                            <div class="title before">Before </div>
+                                            <div class="title delivery-before">Delivery before </div>
                                             <div class="inside">December 24, 2019</div>
                                         </div>
                                     </div>
@@ -693,7 +748,7 @@
 
                         </div>
 
-                        <div style="margin-bottom: 15px">Price summary</div>
+                        <div style="margin-bottom: 5px">Price summary</div>
                         <div class="panel">
                             <div style="display: flex">
 
@@ -725,17 +780,20 @@
                     <div class="panel-top" style="margin-bottom: 15px">
                         <a href=" ">Buy Simple Mobie - Apple iPhone 11 Pro (64KB) - Space Gray from Amazon.s</a><br>
                         <hr>
-                        <div class="delivery-infor" style="display: flex">
-                            <div class="title" s>
-                                <div>
-                                    From
+                        <div class="delivery-container">
+
+                            <div class="delivery-infor" style="display: flex">
+                                <div class="title">
+                                    <div>
+                                        From
+                                    </div>
                                 </div>
+                                <div class="inside">United State of America</div>
                             </div>
-                            <div class="inside">United State of America</div>
-                        </div>
-                        <div class="delivery-infor" style="display: flex">
-                            <div class="title">To</div>
-                            <span class="inside">Ho Chi Minh City, VN</span>
+                            <div class="delivery-infor" style="display: flex;">
+                                <div class="title">To</div>
+                                <div class="inside">Ho Chi Minh City, VN</div>
+                            </div>
                         </div>
                         <hr>
                         <div style="display: flex">
@@ -744,23 +802,25 @@
                             <div style="font-weight: bold;font-size:24px">$400.00</div>
                         </div>
                         <div class="buttons">
-                            <a class="btn btn-light" role="button" href="?page=createOrder_Step3">Next</a>
+                            <a class="btn btn-light" role="button" href="?page=createOrder_Step4">Request delivery offers</a>
                         </div>
                     </div>
-                    <div class="panel-bottom" style="margin-top:15px">
-                        <div>
+                    <div class="panel-bottom" style="margin-bottom:15px">
+                        <div style="width: 100%;">
+                            <div class="travel-ava">
 
-                            <img class="rounded-circle" src="img/avatar/av_1.jpg">
-                            <img class="rounded-circle" src="img/avatar/av_2.jpg">
-                            <img class="rounded-circle" src="img/avatar/av_3.jpg">
-                            <img class="rounded-circle" src="img/avatar/av_4.jpg">
-                            <img class="rounded-circle" src="img/avatar/av_5.jpg">
-                            <img class="rounded-circle" src="img/avatar/av_6.jpg">
-                            <img class="rounded-circle" src="img/avatar/av_7.jpg">
-                            <img class="rounded-circle" src="img/avatar/av_8.jpg">
+                                <img class="rounded-circle" src="img/avatar/av_1.jpg">
+                                <img class="rounded-circle" src="img/avatar/av_2.jpg">
+                                <img class="rounded-circle" src="img/avatar/av_3.jpg">
+                                <img class="rounded-circle" src="img/avatar/av_4.jpg">
+                                <img class="rounded-circle" src="img/avatar/av_5.jpg">
+                                <img class="rounded-circle" src="img/avatar/av_6.jpg">
+                                <img class="rounded-circle" src="img/avatar/av_7.jpg">
+                                <img class="rounded-circle" src="img/avatar/av_8.jpg">
+                            </div>
                         </div>
 
-                        <div class="title"><span style="color:green; font-weight:bold;">59 verfied travelers</span> are ready to deliver your item to Ho Chi Minh City, VN!</div>
+                        <div class=""><span style="color:green; font-weight:bold;">59 verfied travelers</span> are ready to deliver your item to Ho Chi Minh City, VN!</div>
 
                     </div>
                 </div>

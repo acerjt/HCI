@@ -379,3 +379,9 @@
     z-index: 999;
     background-color: #fff;
 }
+hr {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+}

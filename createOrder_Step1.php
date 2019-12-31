@@ -373,7 +373,7 @@
             border-radius: 5px;
             border: 1px solid #4c9fbf;
             height: 40px;
-            width: 500px;
+            width: 100%;
             text-align: center;
         }
 
@@ -480,7 +480,7 @@
         .content .container .row .col-md-4 .buttons a {
             font-size: 20px;
             font-weight: normal;
-            height: 40px;
+            /* height: 40px; */
             width: 100%;
             color: #fff;
             text-align: center;
@@ -555,7 +555,12 @@
                 margin-left: 2px;
                 /* margin-bottom: 5px; */
             }
-
+            .delivery-container{
+                display: flex;
+            }
+            .delivery-infor{
+                margin: auto;
+            }
         }
 
         @media (min-width: 768px) {
@@ -599,6 +604,9 @@
             .col-md-4 {
                 padding: 0px 15px;
             }
+            .delivery-container{
+                display: initial;
+            }
         }
 
         .content-title {
@@ -618,7 +626,7 @@
                     <div class="root">
                         <div class="container">
                             <ul class="progressbar">
-                                <li class="active">Product details</li>
+                                <li class="fly active">Product details</li>
                                 <li style="color:#bdbdbd">Delivery details</li>
                                 <li style="color:#bdbdbd">Summary</li>
 
@@ -654,7 +662,7 @@
                     </div>
                     <div class="content-title">Product Images</div>
                     <img class="product_image " src="img/images/im_iphone11_ebay.png " alt=" "> <br>
-                    <div class="parse ">
+                    <div class="parse">
 
                         <img style="text-align:left; " src="img/icon/ic_camera.png ">
                         <a style="color:#4c9fbf "> Upload Image</a>
@@ -683,6 +691,8 @@
                     <div class="panel-top" style="margin-bottom: 15px">
                         <a href=" ">Buy Simple Mobie - Apple iPhone 11 Pro (64KB) - Space Gray from Amazon.s</a><br>
                         <hr>
+                        <div class="delivery-container">
+
                         <div class="delivery-infor" style="display: flex">
                             <div class="title">
                                 <div>
@@ -694,6 +704,7 @@
                         <div class="delivery-infor" style="display: flex">
                             <div class="title">To</div>
                             <span class="inside">Ho Chi Minh City, VN</span>
+                        </div>
                         </div>
                         <hr>
                         <div style="display: flex">
