@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Untitled</title>
-    <link rel="stylesheet" href="bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="bootstrap.min.css"> -->
     <style bs-system-element="" bs-hidden="">
         html::-webkit-scrollbar {
             height: 7px;
@@ -54,10 +54,6 @@
 
         /* Stopping css animations on the stage */
 
-        *:not([bs-anim-preview]) {
-            transition: none !important;
-            transition-duration: 0s !important;
-        }
 
         [bs-dragged] {
             opacity: 0.3 !important;
@@ -65,7 +61,7 @@
 
         /* Inline editing */
 
-        /* [contenteditable=true] {
+        [contenteditable=true] {
             box-shadow: -1px -1px 1px rgba(17, 142, 232, 0.85), 1px 1px 1px rgba(17, 142, 232, 0.85), 0 0 11px rgba(17, 142, 232, 0.85) !important;
             outline: none !important;
             min-height: 1em;
@@ -82,7 +78,7 @@
 
         [contenteditable=true] [contenteditable=false] {
             box-shadow: 0 0 0 1px rgba(17, 142, 232, 0.85);
-        } */
+        }
 
         /* Preventing mouse events for embeds */
 
@@ -244,28 +240,28 @@
             text-align: left;
         }
 
-        .container .row .col-md-12 .parse_button {
+        .container .create-order-container .input-link .parse_button {
             margin-top: 15px;
             display: block;
             margin: 0 auto;
             margin-top: 10px;
-            text-align: center;
+            /* text-align: center; */
         }
 
-        .container .row .col-md-12 .parse_button:hover {
+        .container .create-order-container .input-link .parse_button:hover {
             opacity: 1;
         }
 
-        .container .row .col-md-12 .parse_button .parse {
-            padding-left: 10px;
+        .container .create-order-container .input-link .parse_button .parse {
+            padding: 15px 12px;
             border-radius: 5px;
             border: 1px solid #4c9fbf;
-            height: 40px;
-            width: 500px;
+            height: 50px;
+            width: 650px;
         }
 
-        .btn_create {
-            padding: 5px 32px;
+        .container .create-order-container .input-link .parse_button .btn_create {
+            padding: 13px 32px;
             text-align: center;
             margin-left: 15px;
             height: 50px;
@@ -284,14 +280,16 @@
             line-height: 1;
             outline: none;
             background-color: #4c9fbf;
+            text-decoration: none;
         }
 
-        .btn_create:hover {
+        .container .create-order-container .input-link .parse_button .btn_create:hover {
+
             background-color: #3f89a8;
             border-bottom: none;
         }
 
-        .btn_create {
+        .highlight-phone .container .row .col-md-8 .intro .btn_create {
             padding: 8px 32px;
             text-align: center;
             height: 40px;
@@ -299,7 +297,7 @@
             border: 1px solid #4c9fbf;
             background: #4c9fbf;
             box-shadow: none;
-            /* margin-top: 150px; */
+            margin-top: 150px;
             text-shadow: none;
             opacity: 0.9;
             font-size: inherit;
@@ -313,11 +311,11 @@
             background-color: #4c9fbf;
         }
 
-        .btn_create:hover {
+        .highlight-phone .container .row .col-md-8 .intro .btn_create:hover {
             opacity: 1;
         }
 
-        .btn_create:active {
+        .highlight-phone .container .row .col-md-8 .intro .btn_create:active {
             transform: translateY(1px);
         }
 
@@ -338,7 +336,7 @@
         
          */
 
-        .container .row .col-md-4 .row .col-md-3 img {
+        .container .row .col-md-4 .row .col-md-4 img {
             width: 80px;
             height: 80px;
         }
@@ -391,9 +389,9 @@
         }
 
         @media (min-width: 768px) {
-            .col-md-9 {
-                flex: 0 0 73.666667%;
-                max-width: 73.666667%;
+            .col-md-8 {
+                flex: 0 0 66.666667%;
+                max-width: 66.666667%;
             }
         }
 
@@ -533,111 +531,6 @@
         .container .row .col-md-12 h2 {
             font-size: 40px;
         }
-
-        .container .row .col-md-6 .des {
-            font-size: 14px;
-            color: #000;
-        }
-
-        .container .row .col-md-6 img {
-            width: 100%;
-            height: 370px;
-            margin-bottom: 40px;
-        }
-
-        .container .row .col-md-6 .parse_button .btn_create {
-            padding: 7px 220px;
-            /* width: 500px; */
-        }
-
-        .container .row .col-md-6 .parse_button .parse {
-            padding-left: 10px;
-            border: 1px solid #bdbdbd;
-            height: 40px;
-            width: 540px;
-            margin-top: -2px;
-            /* margin-bottom: 1px; */
-        }
-
-        .container .row .col-md-6 .input {
-            border: 1px solid #bdbdbd;
-            width: 270px;
-            height: 40px;
-            font-size: 16px;
-            padding-left: 10px;
-            border-top-left-radius: 5px;
-        }
-
-        .container .row .col-md-6 .input .parse {
-            height: 35px;
-            overflow: hidden;
-            border-style: none;
-            border-color: #fff;
-            border-bottom: #bdbdbd;
-            border-image: none;
-            margin-left: 5px;
-        }
-
-        .container .row .col-md-6 .ip_input {
-            padding-left: 10px;
-            padding-right: 10px;
-            padding-top: 5px;
-            padding-bottom: 5px;
-            /* border-radius: 5px; */
-            border: 1px solid #bdbdbd;
-            background-color: #fff;
-            height: 40px;
-            width: 100%;
-            margin-top: 0px;
-            font-size: 16px;
-        }
-
-        .container .row .col-md-6 .ip_input img {
-            width: 25px;
-            height: 25px;
-            margin-bottom: 0px;
-        }
-
-        .container .row .col-md-4 .row .col-md-4 img {
-            width: 80px;
-            height: 80px;
-        }
-
-        @media (min-width: 576px) {
-            .container .row .col-md-4 {
-                text-align: center;
-            }
-
-            .container .row .col-md-3 {
-                width: 270px;
-            }
-        }
-
-
-        @media(min-width: 768px) {
-            .create-order-container {
-                padding: 20px 0px;
-                margin: 0px 124px;
-            }
-
-            .container .create-order-container .input-link .parse_button .parse {
-                padding: 15px 12px;
-                border-radius: 5px;
-                border: 1px solid #4c9fbf;
-                height: 50px;
-                width: 650px;
-            }
-
-            .container .row .col-md-4 {
-                text-align: left;
-                padding-top: 16px;
-            }
-
-            .container .create-order-container .input-link .parse_button .btn_create {
-                padding-left: 32px;
-                padding-right: 32px;
-            }
-        }
     </style>
     </style>
     <link rel="stylesheet" href="animate.min.css" bs-system-element="" bs-hidden="">
@@ -652,198 +545,257 @@
     <link rel="stylesheet" href="fontawesome5-overrides.min.css" bs-system-element="" bs-hidden="">
     <style></style>
     <style bs-system-element="" bs-hidden=""></style>
+    <style>
+        .create-order-container .create-order-title h2 {
+            font-weight: 700;
+            font-size: 40px;
+        }
+
+        .create-order-container .create-order-title,
+        .create-order-container .create-order-info,
+        .create-order-container .input-link {
+            margin-bottom: 24px;
+        }
+
+        .create-order-container .order-guide a {
+            color: #3f89a8;
+        }
+
+        .container .create-order-container .input-link .parse_button .btn_create {
+            transition: 0.3s;
+        }
+
+        .container .create-order-container .input-link .parse_button .btn_create:not(:disabled):not(.disabled).active,
+        .container .create-order-container .input-link .parse_button .btn_create:not(:disabled):not(.disabled):active {
+            color: #000 !important;
+            background-color: #4c9fbf !important;
+            border-color: #d3d9df !important;
+        }
+
+        @media(min-width: 576px) {
+            .create-order-container {
+                padding: 20px 0px;
+                margin: unset;
+            }
+
+            .container .create-order-container .input-link .parse_button .parse {
+                width: 350px;
+            }
+
+            .container .create-order-container .input-link .parse_button .btn_create {
+                padding-top: 10px;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+
+            .container .row .col-md-4 {
+                text-align: center;
+            }
+
+            .container .row .col-md-3 {
+                width: 270px;
+            }
+
+        }
+
+        @media(min-width: 768px) {
+            .create-order-container {
+                padding: 20px 0px;
+                margin: 0px 124px;
+            }
+
+            .container .create-order-container .input-link .parse_button .parse {
+                padding: 15px 12px;
+                border-radius: 5px;
+                border: 1px solid #4c9fbf;
+                height: 50px;
+                width: 650px;
+
+            }
+
+            .container .row .col-md-4 {
+                text-align: left;
+                padding-top: 16px;
+            }
+
+            .container .create-order-container .input-link .parse_button .btn_create {
+                padding-left: 32px;
+                padding-right: 32px;
+            }
+
+        }
+    </style>
+    <style>
+    
+    
+    
+    </style>
+
 </head>
 
 <body>
     <div>
-        <div class="container" style="margin-top:15px;">
+
+        <div class="container">
             <div class="row">
                 <div class="col-md-6">
                     <h2>Earn $200+ USD every time you travel abroad</h2>
-                    <div class="des" style="color:#bdbdbd" href="">Deliver products to international shoppers and cut your travel costs in half.
-                        Average earnings per trip.</div>
-
+                    <a class="des" href="">Deliver products to international shoppers and cut your travel costs in half.
+                        Average earnings per trip.</a>
                     <div style="display:flex;">
-
-                        <div class="ip_input" style="display: flex;  border-top-left-radius: 5px;">
-                            <div style="margin-right:10px;">
-                                From
-                            </div>
-                            <div contenteditable="true" style="flex-grow:1; color:#bdbdbd;">
-                                City or Country
-                            </div>
+                        <div class="input">
+                            <a class="title">From</a>
+                            <input class="parse" type="text" placeholder="City or Country">
                         </div>
-                        <div class="ip_input" style="display: flex;margin-left:-1px; border-top-right-radius: 5px;">
-                            <div style="margin-right:10px">
-                                To
-                            </div>
-                            <div contenteditable="true" style="flex-grow:1; color:#bdbdbd;">
-                                City or Country
-                            </div>
+                        <div class="input" style="border-top-left-radius:0px; border-top-right-radius: 5px; margin-left:-1px;width:271px;">
+                            <a class="title">To</a>
+                            <input class="parse" type="text" placeholder="City or Country">
                         </div>
                     </div>
-                    <div class="ip_input" style="display: flex;margin-top:-1px;  ">
-                        <div style="margin-right:10px">
-                            Travel date
-                        </div>
-                        <div contenteditable="true" style="flex-grow:1">
-
-                        </div>
-                        <div>
-                            <div class="travel-date">
-                                <img src="img/icon/ic_calender.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="buttons">
-                        <a class="btn btn-light " role="button" href="?page=addTrip_Step1" style="border: 1px solid #4c9fbf;width: 100%; margin-top: -1px;margin-bottom: 15px; height:40px; border-top-left-radius:0px !important; text-align:center ; border-top-right-radius:0px !important">
-                            Add trip</a>
+                    <div class="parse_button">
+                        <input class="parse" type="text" placeholder="Travel date" title="From">
+                        <br>
+                        <button class="btn_create" style="border-top-left-radius: 0px;border-top-right-radius: 0px; width: 540px; padding:0px 120px; margin-top:-1px;" type="button" href="#">Add trip</button>
                     </div>
                     <div style="margin-top:5px;height:30px;display:flex;">
                         <div style="height:30px; flex-grow: 1;">
                             <a class="des" href="" style="color:4c9fbf">How it works ></a></div>
                         <div style="height:30px; float:right;">
-                            <div class="des" href="" style="color:#828282">Get notified about new orders
-                                <span>
-
-                                    <img style="width:50px; height:30px; margin-bottom: 0px;" src="img/icon/ic_notification.png" alt=""></div>
-                            </span>
-                        </div>
+                            <a class="des" href="" style="color:#828282">Get notified about new orders</a>
+                            <img style="width:50px; height:30px; margin-bottom: 0px;" src="img/icon/ic_notification.PNG" alt=""></div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <!-- <div class="col-md-6">
                     <img src="img/images/im_travel.jpg" alt="">
-                </div>
+                </div> -->
             </div>
-        </div>
-        <div style="background-color: #e5f3fb;">
+            <div>
 
-            <div class="container" style="background-color:#e5f3fb">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <img src="img/icon/ic_secure.png" alt="">
+                <div class="container" style="background-color:#e5f3fb">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="img/icon/ic_secure.png" alt="">
+                                </div>
+                                <div class="col-md-8">
+                                    <h3 class="name">Secure Payments </h3>
+                                    <a class="description">Your payment is protected and never released to the traveler until you confirm delivery.</a> <br>
+                                    <div>
+                                        <a class="learn">Learn more about Trust and Safety <i class="fas fa-chevron-right fa-xs"></i></a>
+
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-md-8">
-                                <h3 class="name">Secure Payments </h3>
-                                <a class="description">Your payment is protected and never released to the traveler until you confirm delivery.</a> <br>
-                                <div>
-                                    <a class="learn">Learn more about Trust and Safety <i class="fas fa-arrow-circle-right"></i></a>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="img/icon/ic_guareanteed.png" alt="">
+                                </div>
+                                <div class="col-md-8">
+                                    <h3 class="name">Guaranteed delivery</h3>
+                                    <a class="description">Your are protected from start to finish. If there is an issue with your order, you will get 100% money back or will received.</a> <br>
+                                    <a class="learn">Learn more about Money Back guarantee <i class="fas fa-chevron-right fa-xs"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="img/icon/ic_24.png" alt="">
+                                </div>
+                                <div class="col-md-8">
+                                    <h3 class="name">24/7 Customer care</h3>
+                                    <a class="description">Customer support in your native language, within 24 hours.</a><br>
+                                    <a class="learn">Go to Help Center <i class="fas fa-chevron-right fa-xs"></i></a>
+
 
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <img src="img/icon/ic_guareanteed.png" alt="">
-                            </div>
-                            <div class="col-md-8">
-                                <h3 class="name">Guaranteed delivery</h3>
-                                <a class="description">Your are protected from start to finish. If there is an issue with your order, you will get 100% money back or will received.</a> <br>
-                                <a class="learn">Learn more about Money Back guarantee <i class="fas fa-arrow-circle-right"></i></a>
-                            </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="container" style="margin-top:15px">
+                    <div class="row">
+                        <div class="col-md-12"><a class="hot">TOP SHOP</a></div>
+                        <div class="col-md-3">
+                            <img class="topshop" src="img/images/im_amazon.png" alt="">
                         </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <img src="img/icon/ic_24.png" alt="">
-                            </div>
-                            <div class="col-md-8">
-                                <h3 class="name">24/7 Customer care</h3>
-                                <a class="description">Customer support in your native language, within 24 hours.</a><br>
-                                <a class="learn">Go to Help Center <i class="fas fa-arrow-circle-right"></i></a>
-
-
-                            </div>
+                        <div class="col-md-3">
+                            <img class="topshop" src="img/images/im_ebay.png" alt="">
+                        </div>
+                        <div class="col-md-3">
+                            <img class="topshop" src="img/images/im_waltmart.png" alt=" ">
+                        </div>
+                        <div class="col-md-3 ">
+                            <img class="topshop " src="img/images/im_farfetch.png " alt=" ">
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+            <div>
+                <div class="container" style="margin-top:15px">
+                    <div class="row">
+                        <div class="col-md-12"><a class="hot">ELECTRICS</a></div>
+                        <div class="col-md-3">
+                            <img class="topshop" src="img/images/im_apple.png" alt="">
+                        </div>
+                        <div class="col-md-3">
+                            <img class="topshop" src="img/images/im_dell.png" alt="">
+                        </div>
+                        <div class="col-md-3">
+                            <img class="topshop" src="img/images/im_canon.png" alt=" ">
+                        </div>
+                        <div class="col-md-3 ">
+                            <img class="topshop " src="img/images/im_dji.png " alt=" ">
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        <div>
-            <div class="container" style="margin-top:15px">
-                <div class="row">
-                    <div class="col-md-12"><a class="hot">TOP SHOP</a></div>
-                    <div class="col-md-3">
-                        <img class="topshop" src="img/images/im_amazon.png" alt="">
-                    </div>
-                    <div class="col-md-3">
-                        <img class="topshop" src="img/images/im_ebay.png" alt="">
-                    </div>
-                    <div class="col-md-3">
-                        <img class="topshop" src="img/images/im_waltmart.png" alt=" ">
-                    </div>
-                    <div class="col-md-3 ">
-                        <img class="topshop " src="img/images/im_farfetch.png " alt=" ">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div class="container" style="margin-top:15px">
-                <div class="row">
-                    <div class="col-md-12"><a class="hot">ELECTRICS</a></div>
-                    <div class="col-md-3">
-                        <img class="topshop" src="img/images/im_apple.png" alt="">
-                    </div>
-                    <div class="col-md-3">
-                        <img class="topshop" src="img/images/im_dell.png" alt="">
-                    </div>
-                    <div class="col-md-3">
-                        <img class="topshop" src="img/images/im_canon.png" alt=" ">
-                    </div>
-                    <div class="col-md-3 ">
-                        <img class="topshop " src="img/images/im_dji.png " alt=" ">
+            <div>
+                <div class="container" style="margin-top:15px">
+                    <div class="row">
+                        <div class="col-md-12"><a class="hot">FASHION AND BEAUTY</a></div>
+                        <div class="col-md-3">
+                            <img class="topshop" src="img/images/im_macys.png" alt="">
+                        </div>
+                        <div class="col-md-3">
+                            <img class="topshop" src="img/images/im_her.png" alt="">
+                        </div>
+                        <div class="col-md-3">
+                            <img class="topshop" src="img/images/im_dior.png" alt=" ">
+                        </div>
+                        <div class="col-md-3 ">
+                            <img class="topshop " src="img/images/im_jcrew.png " alt=" ">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div>
-            <div class="container" style="margin-top:15px">
-                <div class="row">
-                    <div class="col-md-12"><a class="hot">FASHION AND BEAUTY</a></div>
-                    <div class="col-md-3">
-                        <img class="topshop" src="img/images/im_macys.png" alt="">
-                    </div>
-                    <div class="col-md-3">
-                        <img class="topshop" src="img/images/im_her.png" alt="">
-                    </div>
-                    <div class="col-md-3">
-                        <img class="topshop" src="img/images/im_dior.png" alt=" ">
-                    </div>
-                    <div class="col-md-3 ">
-                        <img class="topshop " src="img/images/im_jcrew.png " alt=" ">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div>
-            <div class="container" style="margin-top:15px">
-                <div class="row">
-                    <div class="col-md-12"><a class="hot">SHOES</a></div>
-                    <div class="col-md-3">
-                        <img class="topshop" src="img/images/im_nike-logo.png" alt="">
-                    </div>
-                    <div class="col-md-3">
-                        <img class="topshop" src="img/images/im_adidas.png" alt="">
-                    </div>
-                    <div class="col-md-3">
-                        <img class="topshop" src="img/images/im_newbalance.png" alt=" ">
-                    </div>
-                    <div class="col-md-3 ">
-                        <img class="topshop " src="img/images/im_zappons.png " alt=" ">
+            <div>
+                <div class="container" style="margin-top:15px">
+                    <div class="row">
+                        <div class="col-md-12"><a class="hot">SHOES</a></div>
+                        <div class="col-md-3">
+                            <img class="topshop" src="img/images/im_nike-logo.png" alt="">
+                        </div>
+                        <div class="col-md-3">
+                            <img class="topshop" src="img/images/im_adidas.png" alt="">
+                        </div>
+                        <div class="col-md-3">
+                            <img class="topshop" src="img/images/im_newbalance.png" alt=" ">
+                        </div>
+                        <div class="col-md-3 ">
+                            <img class="topshop " src="img/images/im_zappons.png " alt=" ">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
 </body>
 
 </html>

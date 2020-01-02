@@ -842,7 +842,7 @@
                     </div>
 
                     <div>
-                        <a style="width: 100%; height:40px" class="btn btn-accept" role="button " href="# ">Countinue</a>
+                        <a style="width: 100%; height:40px" class="btn btn-accept" role="button " href="# ">Continue</a>
                     </div>
                 </div>
             </div>

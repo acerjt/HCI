@@ -734,7 +734,7 @@
                                 <h3 class="name">Secure Payments </h3>
                                 <a class="description">Your payment is protected and never released to the traveler until you confirm delivery.</a> <br>
                                 <div>
-                                    <a class="learn">Learn more about Trust and Safety <i class="fas fa-arrow-circle-right"></i></a>
+                                    <a class="learn">Learn more about Trust and Safety <i class="fas fa-chevron-right fa-xs"></i></a>
 
                                 </div>
                             </div>
@@ -748,7 +748,7 @@
                             <div class="col-md-8">
                                 <h3 class="name">Guaranteed delivery</h3>
                                 <a class="description">Your are protected from start to finish. If there is an issue with your order, you will get 100% money back or will received.</a> <br>
-                                <a class="learn">Learn more about Money Back guarantee <i class="fas fa-arrow-circle-right"></i></a>
+                                <a class="learn">Learn more about Money Back guarantee <i class="fas fa-chevron-right fa-xs"></i></a>
                             </div>
                         </div>
                     </div>
@@ -760,7 +760,7 @@
                             <div class="col-md-8">
                                 <h3 class="name">24/7 Customer care</h3>
                                 <a class="description">Customer support in your native language, within 24 hours.</a><br>
-                                <a class="learn">Go to Help Center <i class="fas fa-arrow-circle-right"></i></a>
+                                <a class="learn">Go to Help Center <i class="fas fa-chevron-right fa-xs"></i></a>
 
 
                             </div>

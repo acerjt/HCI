@@ -770,104 +770,19 @@
     <style bs-system-element="" bs-hidden=""></style>
     <style>
         @media (min-width: 576px) {
-
-            /* show 3 items */
-            .carousel-inner .active,
-            .carousel-inner .active+.carousel-item,
-            .carousel-inner .active+.carousel-item+.carousel-item {
-                display: block;
-            }
-
-            /* .carousel-inner
-             {
-                width: 300px !important;
-            } */
-
-            .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
-            .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item,
-            .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item+.carousel-item {
-                transition: none;
-                margin-right: initial;
-            }
-
-            .carousel-inner .carousel-item-next,
-            .carousel-inner .carousel-item-prev {
-                position: relative;
-                transform: translate3d(0, 0, 0);
-            }
-
-            .carousel-inner .active.carousel-item+.carousel-item+.carousel-item+.carousel-item {
-                position: absolute;
-                top: 0;
-                right: -33.3333%;
-                z-index: -1;
-                display: block;
-                visibility: visible;
-            }
-
-            /* left or forward direction */
-            .active.carousel-item-left+.carousel-item-next.carousel-item-left,
-            .carousel-item-next.carousel-item-left+.carousel-item,
-            .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item,
-            .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item+.carousel-item {
-                position: relative;
-                transform: translate3d(-100%, 0, 0);
-                visibility: visible;
-            }
-
-            /* farthest right hidden item must be abso position for animations */
-            .carousel-inner .carousel-item-prev.carousel-item-right {
-                position: absolute;
-                top: 0;
-                left: 0;
-                z-index: -1;
-                display: block;
-                visibility: visible;
-            }
-
-            /* right or prev direction */
-            .active.carousel-item-right+.carousel-item-prev.carousel-item-right,
-            .carousel-item-prev.carousel-item-right+.carousel-item,
-            .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item,
-            .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item+.carousel-item {
-                position: relative;
-                transform: translate3d(100%, 0, 0);
-                visibility: visible;
-                display: block;
-                visibility: visible;
-            }
-
-        }
-
-
-
-        /* @media only screen and (max-width: 576px) {
-            .recent-order-group {
-                display: none;
-            }
-        } */
-        @media only screen and (min-width: 1200px) {
-            #carouselExample {
-                display: none;
-            }
-        }
-
-        @media (min-width: 576px) {
             .testimonials-clean .item {
                 width: 320px;
                 margin-left: 110px;
                 margin-right: 110px;
             }
 
-            .join-gobal .buttons .btn-primary,.join-gobal .buttons .btn-light2 {
+            .join-gobal .buttons .btn-primary,
+            .join-gobal .buttons .btn-light2 {
 
                 width: 100%;
             }
         }
 
-        /* .team-boxed .people {
-            align-items: center;
-        } */
 
         @media (min-width: 768px) {
             .testimonials-clean .item {
@@ -876,14 +791,39 @@
                 margin-right: 0px;
             }
 
-            .join-gobal .buttons .btn-primary,.join-gobal .buttons .btn-light2 {
+            .join-gobal .buttons .btn-primary,
+            .join-gobal .buttons .btn-light2 {
 
                 width: initial;
             }
-            
+
         }
     </style>
+    <style>
+        @media (min-width: 576px) {
 
+            .bd-example {
+                display: initial;
+            }
+
+            .policy {
+                display: none;
+            }
+
+        }
+
+        @media (min-width: 768px) {
+
+            .bd-example {
+                display: none;
+            }
+
+            .policy {
+                display: flex;
+            }
+
+        }
+    </style>
     <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
@@ -895,7 +835,7 @@
             <div class="intro">
                 <h2 class="text-left header-content-title">Shop Anywhere, Travel Everywhere</h2>
                 <p class="text-left">TradeZ connects shoppers and travelers who help each other access the world. </p>
-                <div class="buttons"><a class="btn btn-primary" role="button" href="?page=createOrder_Step0">Order with TradeZ</a><button class="btn btn-light1" type="button">Travel with TradeZ</button></div>
+                <div class="buttons"><a class="btn btn-primary" role="button" href="?page=createOrder_Step0">Order with TradeZ</a><a class="btn btn-light1" role="button" href="?page=addTrip_Step0">Travel with TradeZ</a></div>
             </div>
 
         </div>
@@ -1171,13 +1111,13 @@
     </div>
     </div>
     </div>
-    <div class="team-boxed" style="background-color:white">
+    <div class="team-boxed" style="background-color:white; margin-bottom: 16px">
         <div class="container">
             <div class="intro">
                 <h2 class="text-center">We pride ourselves on quality service</h2>
                 <p class="text-center">It’s safe, easy and a fun way to make money traveling the world.</p>
             </div>
-            <div class="row people">
+            <div class="row policy">
                 <div class="col-md-6 col-lg-4 item">
                     <div class="box"><img class="rounded-circle" src="img/icon/ic_secure.png">
                         <h3 class="name">Secure Online Payments</h3>
@@ -1223,20 +1163,162 @@
                     </div>
                 </div>
             </div>
+
+
+            <div class="bd-example">
+                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators" style="bottom: -30px">
+                        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="5 "></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="box">
+                                <div style="text-align: center">
+
+                                    <img style="max-width:160px" class="rounded-circle" src="img/icon/ic_secure.png">
+                                </div>
+                                <div style="text-align: center">
+                                    <h3 class="name">Secure Online Payments</h3>
+                                </div>
+                                <div style="text-align: center">
+
+                                    <p class="description">Your money is safe with Grabr every step of the way. Grabr uses a secure payment system and you have a money back guarantee.</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="box">
+                                <div style="text-align: center">
+
+                                    <img style="max-width:160px" class="rounded-circle" src="img/icon/ic_guareanteed.png">
+                                </div>
+                                <div style="text-align: center">
+                                    <h3 class="name">Guaranteed delivery</h3>
+                                </div>
+                                <div style="text-align: center">
+
+
+                                    <p class="description">If a traveler cancels your order or delivers an item in bad condition, we will issue a full refund and aim to match you with a new traveler. </p>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="box">
+                                <div style="text-align: center">
+
+                                    <img style="max-width:160px" class="rounded-circle" src="img/icon/ic_multiple.png">
+                                </div>
+                                <div style="text-align: center">
+                                    <h3 class="name">Multiple Payment Options</h3>
+                                </div>
+                                <div style="text-align: center">
+
+
+                                    <p class="description">To make your life easier, we accept a range of payment methods including Visa, MasterCard and American Express, with more options available soon. </p>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="box">
+                                <div style="text-align: center">
+                                    <img style="max-width:160px" class="rounded-circle" src="img/icon/ic_no.png">
+                                </div>
+                                <div style="text-align: center">
+                                    <h3 class="name">No Hidden Fees</h3>
+
+                                </div>
+                                <div style="text-align: center">
+
+
+                                    <p class="description">For full transparency, Grabr uses machine learning to calculate all applicable taxes and fees before you publish your order, so you know exactly how much you are paying. </p>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="box">
+                                <div style="text-align: center">
+
+                                    <img style="max-width:160px" class="rounded-circle" src="img/icon/ic_community.png">
+                                </div>
+                                <div style="text-align: center">
+                                    <h3 class="name">Community of Verified Shoppers and Travelers</h3>
+
+                                </div>
+                                <div style="text-align: center">
+
+
+                                    <p class="description">Trust is our top priority at Grabr, and we work hard to ensure that our community treats all members with the utmost respect. </p>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="box">
+                                <div style="text-align: center">
+
+                                    <img style="max-width:160px" class="rounded-circle" src="img/icon/ic_24.png">
+                                </div>
+                                <div style="text-align: center">
+                                    <h3 class="name">24/7 Customer Care</h3>
+
+                                </div>
+                                <div style="text-align: center">
+
+
+                                    <p class="description">Our dedicated team of customer service professionals are on hand to resolve any issue that arises throughout the order and delivery process. </p>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <a style="color:#4c9fbf;" class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                        <span style="color:#4c9fbf;" class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a style="color:#4c9fbf;" class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                        <span style="color:#4c9fbf;" class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+
         </div>
+
     </div>
+
+
     <div class="join-gobal" style="background-image: url('img/images/im_join.jpg');">
         <div class="container">
             <div class="intro" style="padding-Top:55px">
                 <h2 class="text-center" style="color:#fff">Join our global community</h2>
 
             </div>
-            <div class="buttons"><a class="btn btn-primary" role="button" href="?page=createOrder_Step0">Shop overseas products</a><button class="btn btn-light2" type="button">Make money traveling</button></div>
+            <div class="buttons"><a class="btn btn-primary" role="button" href="?page=createOrder_Step0">Shop overseas products</a><a class="btn btn-light2" role="button" href="?page=addTrip_Step0">Make money traveling</a></div>
         </div>
     </div>
     <div class="photo-gallery"></div>
 </body>
-<script>
+<!-- <script>
     $('#carouselExample').on('slide.bs.carousel', function(e) {
 
 
@@ -1260,6 +1342,6 @@
             }
         }
     });
-</script>
+</script> -->
 
 </html>

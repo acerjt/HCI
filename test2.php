@@ -65,7 +65,7 @@
 
         /* Inline editing */
 
-        /* [contenteditable=true] {
+        [contenteditable=true] {
             box-shadow: -1px -1px 1px rgba(17, 142, 232, 0.85), 1px 1px 1px rgba(17, 142, 232, 0.85), 0 0 11px rgba(17, 142, 232, 0.85) !important;
             outline: none !important;
             min-height: 1em;
@@ -82,7 +82,7 @@
 
         [contenteditable=true] [contenteditable=false] {
             box-shadow: 0 0 0 1px rgba(17, 142, 232, 0.85);
-        } */
+        }
 
         /* Preventing mouse events for embeds */
 
@@ -260,15 +260,15 @@
             padding-left: 10px;
             border-radius: 5px;
             border: 1px solid #4c9fbf;
-            height: 40px;
-            width: 500px;
+            /* height: 40px;
+            width: 500px; */
         }
 
-        .btn_create {
+        .container .row .col-md-12 .parse_button .btn_create {
             padding: 5px 32px;
             text-align: center;
             margin-left: 15px;
-            height: 50px;
+            /* height: 50px; */
             margin: 10px;
             border: 1px solid #4c9fbf;
             border-radius: 5px;
@@ -286,12 +286,12 @@
             background-color: #4c9fbf;
         }
 
-        .btn_create:hover {
+        .container .row .col-md-12 .parse_button .btn_create:hover {
             background-color: #3f89a8;
             border-bottom: none;
         }
 
-        .btn_create {
+        .highlight-phone .container .row .col-md-8 .intro .btn_create {
             padding: 8px 32px;
             text-align: center;
             height: 40px;
@@ -299,7 +299,7 @@
             border: 1px solid #4c9fbf;
             background: #4c9fbf;
             box-shadow: none;
-            /* margin-top: 150px; */
+            margin-top: 150px;
             text-shadow: none;
             opacity: 0.9;
             font-size: inherit;
@@ -313,11 +313,11 @@
             background-color: #4c9fbf;
         }
 
-        .btn_create:hover {
+        .highlight-phone .container .row .col-md-8 .intro .btn_create:hover {
             opacity: 1;
         }
 
-        .btn_create:active {
+        .highlight-phone .container .row .col-md-8 .intro .btn_create:active {
             transform: translateY(1px);
         }
 
@@ -338,7 +338,7 @@
         
          */
 
-        .container .row .col-md-4 .row .col-md-3 img {
+        .container .row .col-md-4 .row .col-md-4 img {
             width: 80px;
             height: 80px;
         }
@@ -391,9 +391,9 @@
         }
 
         @media (min-width: 768px) {
-            .col-md-9 {
-                flex: 0 0 73.666667%;
-                max-width: 73.666667%;
+            .col-md-8 {
+                flex: 0 0 66.666667%;
+                max-width: 66.666667%;
             }
         }
 
@@ -411,8 +411,8 @@
         }
 
         .highlight-phone {
-            color: #313437;
-            background-color: #000;
+            color: #fff;
+            background-color: #4c9fbf;
             padding: 40px 0 40px;
             overflow: hidden;
         }
@@ -434,6 +434,7 @@
             padding-top: 0;
             margin-top: 0;
             color: #fff;
+            font-size: 25px;
         }
 
         .highlight-phone .intro {
@@ -509,7 +510,8 @@
         }
 
         .container .row .col-md-12 {
-            padding-left: 0px;
+            padding-left: 15px;
+            padding-top: 15px;
             margin-bottom: 10px;
             margin-top: 15px;
         }
@@ -534,109 +536,144 @@
             font-size: 40px;
         }
 
-        .container .row .col-md-6 .des {
+        .btn-setting {
+            background-image: url(img/icon/ic_setting.png);
+            background-repeat: no-repeat;
+            background-position: left;
+            color: #000;
+            background-color: #fff;
+            height: 35px;
+            width: 150px;
+            border-radius: 5px;
+            text-align: center;
+            border: 1px solid #fff;
+            padding-left: 40px;
+        }
+
+        .des {
+            color: #fff;
             font-size: 14px;
+        }
+
+        .money {
+            color: #fff;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .container .row .col-md-3 .title {
+            font-size: 16px;
+            color: #4c9fbf;
+            padding-bottom: 5px;
+            text-align: center;
+            /* border-bottom: 2px solid #4c9fbf; */
+        }
+
+        .filter {
+            font-size: 16px;
+            border: none;
+            background-color: #f2f2f2;
+            background-image: url(img/icon/ic_down.png);
+            background-repeat: no-repeat;
+            background-position: right;
+            padding-right: 50px;
+            margin-left: 15px;
+        }
+
+        .name {
+            font-size: 20px;
+            font-weight: bold;
             color: #000;
         }
 
-        .container .row .col-md-6 img {
-            width: 100%;
-            height: 370px;
-            margin-bottom: 40px;
+        .time {
+            font-size: 14px;
+            color: #828282;
         }
 
-        .container .row .col-md-6 .parse_button .btn_create {
-            padding: 7px 220px;
-            /* width: 500px; */
+        .content {
+            background-color: #f2f2f2;
         }
 
-        .container .row .col-md-6 .parse_button .parse {
-            padding-left: 10px;
-            border: 1px solid #bdbdbd;
-            height: 40px;
-            width: 540px;
-            margin-top: -2px;
-            /* margin-bottom: 1px; */
-        }
-
-        .container .row .col-md-6 .input {
-            border: 1px solid #bdbdbd;
-            width: 270px;
-            height: 40px;
-            font-size: 16px;
-            padding-left: 10px;
-            border-top-left-radius: 5px;
-        }
-
-        .container .row .col-md-6 .input .parse {
-            height: 35px;
-            overflow: hidden;
-            border-style: none;
-            border-color: #fff;
-            border-bottom: #bdbdbd;
-            border-image: none;
-            margin-left: 5px;
-        }
-
-        .container .row .col-md-6 .ip_input {
-            padding-left: 10px;
-            padding-right: 10px;
-            padding-top: 5px;
-            padding-bottom: 5px;
-            /* border-radius: 5px; */
-            border: 1px solid #bdbdbd;
+        .col-md-12 {
             background-color: #fff;
-            height: 40px;
-            width: 100%;
-            margin-top: 0px;
+            border-radius: 5px;
+            /* width: 500px;
+            height: 700px; */
+            padding-left: 15px;
+        }
+
+        .container .row .col-md-9 .request img {
+            max-width: 50px;
+            /* float: left; */
+            margin-right: 15px;
+        }
+
+        .content .container .row .col-md-12 .product_image {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            border: 1px solid #bdbdbd;
+            border-radius: 5px;
+        }
+
+        .content .container .row .col-md-8 .name-product {
+            font-size: 20px;
+            color: black;
+            /* margin-left: 15px; */
+            font-weight: bold;
+        }
+
+        .content .container .row .col-md-8 .title {
             font-size: 16px;
+            color: #828282;
+            font-weight: normal;
+            padding-right: 10px;
         }
 
-        .container .row .col-md-6 .ip_input img {
-            width: 25px;
-            height: 25px;
-            margin-bottom: 0px;
+        .content .container .row .col-md-8 .inside {
+            font-size: 16px;
+            color: black;
+            font-weight: normal;
         }
 
-        .container .row .col-md-4 .row .col-md-4 img {
-            width: 80px;
-            height: 80px;
+        .content .container .row .col-md-9 .panel {
+            margin-bottom: 15px;
+            background-color: #f2f2f2;
+            border: 1px solid #f2f2f2;
+            border-radius: 5px;
+            padding: 16px 16px;
+            /* margin: 16px auto; */
         }
 
-        @media (min-width: 576px) {
-            .container .row .col-md-4 {
-                text-align: center;
-            }
-
-            .container .row .col-md-3 {
-                width: 270px;
-            }
+        .container .row .col-md-12 .btn_create {
+            padding: 3px 220px;
         }
 
+        .btn_create {
+            width: 100%;
+            padding: 5px 32px;
+            text-align: center;
+            height: 40px;
+            margin-bottom: 10px;
+            border: 1px solid #4c9fbf;
+            border-radius: 5px;
+            background: #4c9fbf;
+            box-shadow: none;
+            text-shadow: none;
+            opacity: 0.9;
+            font-size: 16px;
+            text-transform: uppercase;
+            color: #fff;
+            text-transform: none;
+            letter-spacing: 0.4px;
+            line-height: 1;
+            outline: none;
+            background-color: #4c9fbf;
+        }
 
-        @media(min-width: 768px) {
-            .create-order-container {
-                padding: 20px 0px;
-                margin: 0px 124px;
-            }
-
-            .container .create-order-container .input-link .parse_button .parse {
-                padding: 15px 12px;
-                border-radius: 5px;
-                border: 1px solid #4c9fbf;
-                height: 50px;
-                width: 650px;
-            }
-
-            .container .row .col-md-4 {
-                text-align: left;
-                padding-top: 16px;
-            }
-
-            .container .create-order-container .input-link .parse_button .btn_create {
-                padding-left: 32px;
-                padding-right: 32px;
-            }
+        .btn_create:hover {
+            background-color: #3f89a8;
+            border-bottom: none;
         }
     </style>
     </style>
@@ -652,198 +689,255 @@
     <link rel="stylesheet" href="fontawesome5-overrides.min.css" bs-system-element="" bs-hidden="">
     <style></style>
     <style bs-system-element="" bs-hidden=""></style>
+    <style>
+        @media(min-width:576px) {
+            .container .row .money-info {
+
+                display: flex;
+            }
+
+            .money-earn {
+                width: 50%;
+            }
+
+            .value-item {
+                width: 50%;
+            }
+
+            .container .action .col-md-3 {
+                width: 135px;
+                padding: 0px 16px;
+            }
+
+            .border-orders {
+                border-bottom: 2px solid #4c9fbf;
+                position: absolute;
+                right: 35px;
+                left: 35px;
+                bottom: 0px;
+            }
+
+            .content .container .row .order-available-title,
+            .content .container .row .filter-sorting {
+                width: 50%;
+            }
+            .product-img img{
+                margin-bottom: 16px;
+                margin-left: 99px;
+                margin-right: 99px;
+            }
+        }
+
+        @media(min-width:768px) {
+            .product-img img{
+                margin-bottom: unset;
+                margin-left: unset;
+                margin-right: unset;
+            }
+            .container .row .money-info {
+
+                text-align: right
+            }
+
+            .container .row .money-info {
+
+                display: unset;
+            }
+
+            .border-orders {
+                border-bottom: 2px solid #4c9fbf;
+                position: absolute;
+                right: 75px;
+                left: 75px;
+                top: 24px;
+                bottom: 3px
+            }
+
+            .money-earn {
+                width: 100%;
+            }
+
+            .value-item {
+                width: 100%;
+            }
+
+            .filter-sorting {
+                text-align: right;
+            }
+        }
+
+        .container .row .col-lg .rounded-circle {
+            max-width: 50px;
+            /* float: left; */
+            margin-right: 15px;
+        }
+    </style>
 </head>
 
 <body>
     <div>
-        <div class="container" style="margin-top:15px;">
-            <div class="row">
-                <div class="col-md-6">
-                    <h2>Earn $200+ USD every time you travel abroad</h2>
-                    <div class="des" style="color:#bdbdbd" href="">Deliver products to international shoppers and cut your travel costs in half.
-                        Average earnings per trip.</div>
 
-                    <div style="display:flex;">
+        <div class="highlight-phone">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="intro">
+                            <h2>America Cayon, CA, US - Ho Chi Minh City, VN, November 19</h2>
 
-                        <div class="ip_input" style="display: flex;  border-top-left-radius: 5px;">
-                            <div style="margin-right:10px;">
-                                From
-                            </div>
-                            <div contenteditable="true" style="flex-grow:1; color:#bdbdbd;">
-                                City or Country
-                            </div>
-                        </div>
-                        <div class="ip_input" style="display: flex;margin-left:-1px; border-top-right-radius: 5px;">
-                            <div style="margin-right:10px">
-                                To
-                            </div>
-                            <div contenteditable="true" style="flex-grow:1; color:#bdbdbd;">
-                                City or Country
-                            </div>
+                            <button class="btn-setting"> Trip settings</button>
                         </div>
                     </div>
-                    <div class="ip_input" style="display: flex;margin-top:-1px;  ">
-                        <div style="margin-right:10px">
-                            Travel date
-                        </div>
-                        <div contenteditable="true" style="flex-grow:1">
+                    <div class="col-md-4 money-info">
+                        <div class="money-earn">
 
+                            <div class="money">$0</div>
+                            <div class="des">Your total earnings</div>
                         </div>
-                        <div>
-                            <div class="travel-date">
-                                <img src="img/icon/ic_calender.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="buttons">
-                        <a class="btn btn-light " role="button" href="?page=addTrip_Step1" style="border: 1px solid #4c9fbf;width: 100%; margin-top: -1px;margin-bottom: 15px; height:40px; border-top-left-radius:0px !important; text-align:center ; border-top-right-radius:0px !important">
-                            Add trip</a>
-                    </div>
-                    <div style="margin-top:5px;height:30px;display:flex;">
-                        <div style="height:30px; flex-grow: 1;">
-                            <a class="des" href="" style="color:4c9fbf">How it works ></a></div>
-                        <div style="height:30px; float:right;">
-                            <div class="des" href="" style="color:#828282">Get notified about new orders
-                                <span>
+                        <div class="value-item">
 
-                                    <img style="width:50px; height:30px; margin-bottom: 0px;" src="img/icon/ic_notification.png" alt=""></div>
-                            </span>
+                            <div class="money">$0</div>
+
+                            <div class="des">Total value of items</div>
                         </div>
+
+
                     </div>
-                </div>
-                <div class="col-md-6">
-                    <img src="img/images/im_travel.jpg" alt="">
                 </div>
             </div>
         </div>
-        <div style="background-color: #e5f3fb;">
-
-            <div class="container" style="background-color:#e5f3fb">
-                <div class="row">
-                    <div class="col-md-4">
+        <div>
+            <div class="container" style="margin-top:15px; margin-bottom: 15px;">
+                <div class="row action">
+                    <div class="col-md-9" style="margin-right: auto;margin-left: auto">
                         <div class="row">
-                            <div class="col-md-4">
-                                <img src="img/icon/ic_secure.png" alt="">
-                            </div>
-                            <div class="col-md-8">
-                                <h3 class="name">Secure Payments </h3>
-                                <a class="description">Your payment is protected and never released to the traveler until you confirm delivery.</a> <br>
-                                <div>
-                                    <a class="learn">Learn more about Trust and Safety <i class="fas fa-arrow-circle-right"></i></a>
 
+                            <div class="col-md-3">
+                                <div class="title">
+                                    8 Orders
+                                    <div class="border-orders"></div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-3">
+                                <div class="title" style="border-bottom: none;">0 Offers</div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="title" style="border-bottom: none;">0 To deliver</div>
+                            </div>
+                            <div class="col-md-3 ">
+                                <div class="title" style="border-bottom: none;">0 Delived</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9" style="margin-right: auto; margin-left:auto">
+
+
+
+                        <div class="row">
+
+
+
+                            <div class="col-md-8 order-available-title" style="margin-top:15px;">
+                                <div style="color:#000; font-size:20px;">ORDERS AVAILABLE FOR DELIVERY</div>
+                            </div>
+                            <div class="col-md-4 filter-sorting" style="margin-top:15px;">
+                                <button href="" class="filter">Filter</button>
+                                <button href="" class="filter">Sorting</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9" style="margin-left: auto;margin-right: auto;">
+                        <div style="padding: 16px 16px;background-color: #fff;margin-bottom: 16px;">
+
+
+                            <div class="request" style="display: flex; margin-bottom: 16px;">
+                                <img class="rounded-circle " src="img/avatar/av_1.jpg ">
+                                <div class="name align-items-center" style="margin-right: 16px">Tung Nguyen</div>
+                                <div class="time align-items-center">Requested 2 hours ago</div>
+                            </div>
+                            <div class="container">
+
+
+                                <div class="row">
+
+                                    <div class="col-md-4">
+                                        <div class="product-img">
+
+                                            <img style="max-width:250px;max-height:250px" class="product_image" src="img/images/im_iphone11_ebay.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+
+                                        <div style="margin-bottom: 16px;">
+                                            <a class="name-product" href="">Buy Simple Mobie - Apple iPhone 11 Pro (64KB) - Space Gray</a>
+                                        </div>
+                                        <div class="panel-1" style="margin-bottom: 16px;">
+                                            <div style="display: flex;margin-bottom: 8px;">
+
+                                                <div style="display: flex; flex-grow: 1">
+
+                                                    <div class="title">Delivery To </div>
+                                                    <div class="inside">Ho Chi Minh City, VN</div>
+                                                </div>
+                                                <div style="display: flex">
+                                                    <div class="title">From </div>
+                                                    <div class="inside">United State of America</div>
+                                                </div>
+                                            </div>
+                                            <div style="display: flex">
+
+                                                <div class="title" href="">Before </div>
+                                                <div class="inside" href="">December 24, 2019</div>
+                                            </div>
+                                        </div>
+                                        <div class="panel" style="margin-bottom: 16px;">
+                                            <div style="display: flex">
+
+                                                <div class="title">Where to buy </div>
+                                                <div class="inside" style="color:#4c9fbf"><a style="color:#4c9fbf" target="blank" href="https://www.amabuy.vn"> www.amabuy.vn</a></div>
+                                            </div>
+                                            <div style="display: flex">
+
+                                                <div class="title">Price for 1 product</div>
+                                                <div class="inside">$ 400</div>
+                                            </div>
+
+                                        </div>
+                                        <div style="margin-bottom: 16px;">
+                                            <div style="display: flex">
+
+                                                <div style="flex-grow: 1" class="inside">Traveler reward</div>
+                                                <div class="name align-items-center" style="font-weight: bold;text-align:left">$ 10</div>
+                                            </div>
+                                        </div>
+                                        <div>
+
+                                            <button class="btn_create" type="button" href="#">Make Offer</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <img src="img/icon/ic_guareanteed.png" alt="">
-                            </div>
-                            <div class="col-md-8">
-                                <h3 class="name">Guaranteed delivery</h3>
-                                <a class="description">Your are protected from start to finish. If there is an issue with your order, you will get 100% money back or will received.</a> <br>
-                                <a class="learn">Learn more about Money Back guarantee <i class="fas fa-arrow-circle-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <img src="img/icon/ic_24.png" alt="">
-                            </div>
-                            <div class="col-md-8">
-                                <h3 class="name">24/7 Customer care</h3>
-                                <a class="description">Customer support in your native language, within 24 hours.</a><br>
-                                <a class="learn">Go to Help Center <i class="fas fa-arrow-circle-right"></i></a>
-
-
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
 
-        <div>
-            <div class="container" style="margin-top:15px">
-                <div class="row">
-                    <div class="col-md-12"><a class="hot">TOP SHOP</a></div>
-                    <div class="col-md-3">
-                        <img class="topshop" src="img/images/im_amazon.png" alt="">
-                    </div>
-                    <div class="col-md-3">
-                        <img class="topshop" src="img/images/im_ebay.png" alt="">
-                    </div>
-                    <div class="col-md-3">
-                        <img class="topshop" src="img/images/im_waltmart.png" alt=" ">
-                    </div>
-                    <div class="col-md-3 ">
-                        <img class="topshop " src="img/images/im_farfetch.png " alt=" ">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div class="container" style="margin-top:15px">
-                <div class="row">
-                    <div class="col-md-12"><a class="hot">ELECTRICS</a></div>
-                    <div class="col-md-3">
-                        <img class="topshop" src="img/images/im_apple.png" alt="">
-                    </div>
-                    <div class="col-md-3">
-                        <img class="topshop" src="img/images/im_dell.png" alt="">
-                    </div>
-                    <div class="col-md-3">
-                        <img class="topshop" src="img/images/im_canon.png" alt=" ">
-                    </div>
-                    <div class="col-md-3 ">
-                        <img class="topshop " src="img/images/im_dji.png " alt=" ">
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <div>
-            <div class="container" style="margin-top:15px">
-                <div class="row">
-                    <div class="col-md-12"><a class="hot">FASHION AND BEAUTY</a></div>
-                    <div class="col-md-3">
-                        <img class="topshop" src="img/images/im_macys.png" alt="">
-                    </div>
-                    <div class="col-md-3">
-                        <img class="topshop" src="img/images/im_her.png" alt="">
-                    </div>
-                    <div class="col-md-3">
-                        <img class="topshop" src="img/images/im_dior.png" alt=" ">
-                    </div>
-                    <div class="col-md-3 ">
-                        <img class="topshop " src="img/images/im_jcrew.png " alt=" ">
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <div>
-            <div class="container" style="margin-top:15px">
-                <div class="row">
-                    <div class="col-md-12"><a class="hot">SHOES</a></div>
-                    <div class="col-md-3">
-                        <img class="topshop" src="img/images/im_nike-logo.png" alt="">
-                    </div>
-                    <div class="col-md-3">
-                        <img class="topshop" src="img/images/im_adidas.png" alt="">
-                    </div>
-                    <div class="col-md-3">
-                        <img class="topshop" src="img/images/im_newbalance.png" alt=" ">
-                    </div>
-                    <div class="col-md-3 ">
-                        <img class="topshop " src="img/images/im_zappons.png " alt=" ">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
 </body>
 
 </html>

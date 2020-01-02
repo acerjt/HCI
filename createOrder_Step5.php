@@ -920,7 +920,7 @@
                                     
                                     <div style="display: flex">
                                         <a style="width: 45%; margin:auto" class="btn btn-send-message" role="button " href="# "><i class="far fa-envelope fa-lg"></i> Send Message</a>
-                                        <a style="width: 45%; margin:auto" class="btn btn-accept" role="button " href="# "><i class="fas fa-check"></i> Accept Offer</a>
+                                        <a style="width: 45%; margin:auto" class="btn btn-accept" role="button " href="?page=createOrder_Step6"><i class="fas fa-check"></i> Accept Offer</a>
                                     </div>
                                 </div>
                             </div>
@@ -1011,7 +1011,7 @@
                                   
                                     <div style="display: flex">
                                         <a style="width: 45%; margin:auto" class="btn btn-send-message" role="button " href="# "><i class="far fa-envelope fa-lg"></i> Send Message</a>
-                                        <a style="width: 45%; margin:auto" class="btn btn-accept" role="button " href="# "><i class="fas fa-check"></i> Accept Offer</a>
+                                        <a style="width: 45%; margin:auto" class="btn btn-accept" role="button " href="?page=createOrder_Step6"><i class="fas fa-check"></i> Accept Offer</a>
                                     </div>
                                 </div>
                             </div>
@@ -1102,7 +1102,7 @@
                                    
                                     <div style="display: flex">
                                         <a style="width: 45%; margin:auto" class="btn btn-send-message" role="button " href="# "><i class="far fa-envelope fa-lg"></i> Send Message</a>
-                                        <a style="width: 45%; margin:auto" class="btn btn-accept" role="button " href="# "><i class="fas fa-check"></i> Accept Offer</a>
+                                        <a style="width: 45%; margin:auto" class="btn btn-accept" role="button " href="?page=createOrder_Step6"><i class="fas fa-check"></i> Accept Offer</a>
                                     </div>
                                 </div>
                             </div>
@@ -1192,7 +1192,7 @@
                                  
                                     <div style="display: flex">
                                         <a style="width: 45%; margin:auto" class="btn btn-send-message" role="button " href="# "><i class="far fa-envelope fa-lg"></i> Send Message</a>
-                                        <a style="width: 45%; margin:auto" class="btn btn-accept" role="button " href="# "><i class="fas fa-check"></i> Accept Offer</a>
+                                        <a style="width: 45%; margin:auto" class="btn btn-accept" role="button " href="?page=createOrder_Step6"><i class="fas fa-check"></i> Accept Offer</a>
                                     </div>
                                 </div>
                             </div>

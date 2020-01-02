@@ -696,8 +696,8 @@
                         </div>
                     </div>
                     <div class="buttons">
-                        <a class="btn btn-light " role="button" href="?page=addTrip_Step1" style="border: 1px solid #4c9fbf;width: 100%; margin-top: -1px;margin-bottom: 15px; height:40px; border-top-left-radius:0px !important; text-align:center ; border-top-right-radius:0px !important">
-                            Add trip</a>
+                        <div class="btn btn-light " role="button" href="?page=addTrip_step1" style="border: 1px solid #4c9fbf;width: 100%; margin-top: -1px;margin-bottom: 15px; height:40px; border-top-left-radius:0px !important; text-align:center ; border-top-right-radius:0px !important">
+                            Add trip</div>
                     </div>
                     <div style="margin-top:5px;height:30px;display:flex;">
                         <div style="height:30px; flex-grow: 1;">

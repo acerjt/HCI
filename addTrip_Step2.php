@@ -1,3 +1,4 @@
+
 <html>
 
 <head>
@@ -5,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Untitled</title>
-    <link rel="stylesheet" href="bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="bootstrap.min.css"> -->
     <style bs-system-element="" bs-hidden="">
         html::-webkit-scrollbar {
             height: 7px;
@@ -62,25 +63,21 @@
             opacity: 0.3 !important;
         }
         /* Inline editing */
-        
-        [contenteditable=true] {
+        /* [contenteditable=true] {
             box-shadow: -1px -1px 1px rgba(17, 142, 232, 0.85), 1px 1px 1px rgba(17, 142, 232, 0.85), 0 0 11px rgba(17, 142, 232, 0.85) !important;
             outline: none !important;
             min-height: 1em;
             cursor: initial !important;
         }
-        
         [contenteditable=true] *:not([contenteditable=false]) {
             cursor: initial !important;
         }
-        
         [contenteditable=true]:empty:before {
             content: "\00a0\00a0" !important;
         }
-        
         [contenteditable=true] [contenteditable=false] {
             box-shadow: 0 0 0 1px rgba(17, 142, 232, 0.85);
-        }
+        } */
         /* Preventing mouse events for embeds */
         
         iframe,
@@ -220,9 +217,9 @@
     </style>
     <link rel="stylesheet" href="animate.min.css" bs-system-element="" bs-hidden="">
     <link rel="stylesheet" href="aos.min.css" bs-system-element="" bs-hidden="">
-    <link rel="stylesheet" bs-hidden="1" bs-system-element="1" href="process-bar.min.css">
     <link rel="stylesheet" bs-hidden="1" bs-system-element="1" href="fontawesome-all.min.css">
     <link rel="stylesheet" bs-hidden="1" bs-system-element="1" href="font-awesome.min.css">
+    <link rel="stylesheet" bs-hidden="1" bs-system-element="1" href="process-bar.min.css">
     <link rel="stylesheet" bs-hidden="1" bs-system-element="1" href="ionicons.min.css">
     <link rel="stylesheet" bs-hidden="1" bs-system-element="1" href="line-awesome.min.css">
     <link rel="stylesheet" bs-hidden="1" bs-system-element="1" href="material-icons.min.css">
@@ -345,10 +342,10 @@
             border-radius: 5px;
             border: 1px solid #e0e0e0;
             margin-bottom: 15px;
-            height: 700px;
+            height: 400px;
         }
         
-        .content .container .row .col-md-8 a {
+        .content .container .row .col-md-8 div {
             color: #000;
             font-size: 20px;
         }
@@ -359,13 +356,27 @@
             font-size: 14px;
         }
         
+        .content .container .row .col-md-8 .parse {
+            margin-top: 5px;
+            margin-bottom: 15px;
+            padding-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #4c9fbf;
+            height: 40px;
+            width: 500px;
+            text-align: center;
+        }
+        
         .content .container .row .col-md-8 .ip_input {
             padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
             border-radius: 5px;
             border: 1px solid #f2f2f2;
             background-color: #f2f2f2;
-            height: 40px;
-            width: 500px;
+            /* height: 40px; */
+            width: 100%;
             margin-bottom: 15px;
             margin-top: 0px;
             font-size: 16px;
@@ -406,11 +417,12 @@
         .content .container .row .col-md-4 .panel-top {
             background-color: #fff;
             padding-top: 15px;
+            padding-bottom: 15px;
             padding-left: 15px;
+            padding-right: 15px;
             border-radius: 5px;
             border: 1px solid #e0e0e0;
-            padding-right: 5px;
-            height: 400px;
+            /* height: 300px; */
         }
         
         .content .container .row .col-md-4 a {
@@ -447,7 +459,7 @@
         }
         
         .content .container .row .col-md-8 .long {
-            width: 500px;
+            /* width: 500px; */
             height: 60px;
             margin-top: 3px;
             background-color: #f2f2f2;
@@ -468,9 +480,12 @@
         }
         
         .content .container .row .col-md-4 .buttons a {
-            font-size: 15px;
+            font-size: 20px;
             font-weight: normal;
+            height: 40px;
+            width: 100%;
             color: #fff;
+            text-align: center;
         }
         
         .btn-primary:hover {
@@ -483,84 +498,6 @@
             font-size: 25px;
         }
         
-        .content .container .row .col-md-8 input {
-            background-color: #f2f2f2;
-            height: 0.1px;
-            border: 0.1px solid #f2f2f2;
-            width: 300px;
-        }
-        
-        .content .container .row .col-md-8 .input .parse {
-            height: 35px;
-            overflow: hidden;
-            border-style: none;
-            border-color: #fff;
-            border-image: none;
-            font-size: 16px;
-            padding-left: 5px;
-        }
-        
-        .content .container .row .col-md-8 .input {
-            border: 1px solid #f2f2f2;
-            background-color: #f2f2f2;
-            width: 500px;
-            height: 40px;
-            font-size: 16px;
-            padding-left: 5px;
-            border-radius: 5px;
-            margin-bottom: 15px;
-        }
-        
-        .content .container .row .col-md-8 .input .title-input {
-            font-size: 16px;
-            color: #828282;
-        }
-        
-        .content .container .row .col-md-8 .btn_create {
-            padding: 3px 220px;
-        }
-        
-        .btn_create {
-            padding: 5px 32px;
-            text-align: center;
-            margin-left: 15px;
-            height: 40px;
-            margin: 10px;
-            border: 1px solid #4c9fbf;
-            border-radius: 5px;
-            background: #4c9fbf;
-            box-shadow: none;
-            text-shadow: none;
-            opacity: 0.9;
-            font-size: 16px;
-            text-transform: uppercase;
-            color: #fff;
-            text-transform: none;
-            letter-spacing: 0.4px;
-            line-height: 1;
-            outline: none;
-            background-color: #4c9fbf;
-        }
-        
-        .btn_create:hover {
-            background-color: #3f89a8;
-            border-bottom: none;
-        }
-        
-        .content .container .row .col-md-4 .product_image {
-            margin-top: 5px;
-            margin-bottom: 5px;
-            width: 100px;
-            height: 100px;
-            border: 1px solid #bdbdbd;
-            border-radius: 5px;
-        }
-        
-        .content .container .row .col-md-4 .title-1 {
-            font-size: 16px;
-            color: #4c9fbf;
-            font-weight: normal;
-        }
         .head {
             background-color: #fff;
             height: 100px;
@@ -597,107 +534,177 @@
             color: transparent;
             background-position: 50% 50%;
         }
-      
+        
+        @media (min-width: 576px) {
+            .col-md-4 {
+                padding-right: 0px;
+                padding-left: 0px;
+            }
+        }
+        
+        @media (min-width: 768px) {
+            .col-md-8 {
+                -webkit-box-flex: 0;
+                -ms-flex: 0 0 66.666667%;
+                flex: 0 0 52%;
+                max-width: 66.666667%;
+                margin-left: 100px;
+            }
+            .col-md-4 {
+                position: relative;
+                width: 100%;
+                min-height: 1px;
+                padding-right: 15px;
+                padding-left: 15px;
+            }
+        }
+        
+        .content .container .row .col-md-4 .buttons {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        
+        hr {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        
+        img {
+            width: 25px;
+            height: 25px;
+        }
     </style>
     <style></style>
     <style bs-system-element="" bs-hidden=""></style>
 </head>
-
 <body style="background-color: #f2f2f2;">
-
-<div class="head">
+    <div class="head">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="root">
                         <div class="container">
-                            <ul class="progressbar">
-                                <li class="active">Product details</li>
-                                <li>Delivery details</li>
-
+                            <ul class="progressbar" style="margin-left: -80px;">
+                                <li class="active">Add Trip</li>
+                                <li class="active">Offer details</li>
                             </ul>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
     <div class="content" style="margin-top:15px">
         <div class="container">
             <div class="row">
-                <div class="col-md-8">
-                    <h4>Offer details</h4>
-                    <a class="des" style="color:#4c9fbf" href="">United State, US - Ho Chi Minh City, VN, November 24, 2019.</a><br>
-                    <input type="text " value="">
-                    <br>
-                    <a href="">Summary</a><br>
-                    <div>
-                        <div class="input">
-                            <a class="title-input">Date delivery</a>
-                            <input class="parse" type="text" value="November 24, 2019">
+                <div class="col-md-8" style="height:auto">
+                    <h3 style="font-weight:bold; font-size:25px">Offer details</h3>
+                    <div style="color:#4c9fbf" class="des">United State, US - Ho Chi Minh City, VN, November 24, 2019.</div>
+                    <hr>
+                    <div>Summary</div>
+                    <div class="ip_input" style="display: flex; margin-bottom:5px;margin-top:5px;">
+                        <div style="margin-right:30px; color: #828282">
+                            Date delivery
                         </div>
-
-                        <a href="" class="des" style="color:black;">Shopper asked to deliver an order before December 24, 2019</a>
-                        <div class="input" style="border-top-left-radius:none; border-top-right-radius: 5px;">
-                            <a class="title-input">Your delivery reward</a>
-                            <input class="parse" type="text" value="$ 10">
+                        <div contenteditable="true" style="flex-grow:1">
+                            November 24, 2019
                         </div>
-
-                        <img src="img/icon/ic_check-square.png" alt=""><a href="" class="des" style="font-size:16px">ADD SHIPPING AND CUSTOMS FEES</a>
-                        <div class="input">
-
-                            <input class="parse" type="text" value="$ 0">
+                        <div>
+                            <img src="img/icon/ic_calender.png" alt="">
                         </div>
-                        <img src="img/icon/ic_check-square.png" alt=""><a href="" class="des" style="font-size:16px">ADD 7.75% US SALES TAX</a>
-                        <br>
-                        <a href="" class="des">We noticed that you’re traveling from United Stated, US. We will include US sales tac into the final price for the shopper to pay.</a>
-                        <br>
-                        <a href="">Message shopper</a><br>
-                        <div class="input" style="height:100px;">
-                            <input class="parse " type="text " value="Hi! I’m traveling from United State, US to Ho Chi Minh City, VN. I’ll keep you up-to-date about your order and will coordinate a time and place to met closer to delivery. ">
-                        </div>
-                        <img src="img/icon/ic_uncheck.png " alt=" "><a href=" " class="des " style="font-size:16px ">  By making a delivery offer, I agree to <span style="font-weight: bold; ">TradeZ’s Terms and Conditions</span>  and acknowledge that I am familiar with and agree to abide by the <span style="font-weight: bold; "></span>customs rules and regulations</span> of my destination country. I also acknowledge that I am responsible for paying customs duties and incurring any loses that may incur at customs in my destination country.</a>
-                        <button class="btn_create" type="button" href="#">Make delivery offer</button>
                     </div>
-
+                    <div class="des">Shopper asked to deliver an order before <b>December 24, 2019</b></div>
+                    <div class="ip_input" style="display: flex; margin-top:15px;">
+                        <div style="margin-right:30px;color: #828282">
+                            Your delivery reward
+                        </div>
+                        <div contenteditable="true" style="flex-grow:1">
+                            $ 10
+                        </div>
+                    </div>
+                    <div style="display: flex;">
+                        <div>
+                            <img src="img/icon/ic_check-square.png" alt="">
+                        </div>
+                        <div style="color:#828282; font-size:16px;padding-top:4px; margin-left:10px;">ADD SHIPPING AND CUSTOMS FEES</div>
+                    </div>
+                    <div class="ip_input" style="display: flex; margin-top:5px;">
+                        <div contenteditable="true" style="flex-grow:1">
+                            $ 0
+                        </div>
+                    </div>
+                    <div style="display: flex;">
+                        <div>
+                            <img src="img/icon/ic_check-square.png" alt="">
+                        </div>
+                        <div style="color:#828282; font-size:16px;padding-top:4px; margin-left:10px;">ADD 7.75% US SALES TAX</div>
+                    </div>
+                    <div class="des">We noticed that you�re traveling from United Stated, US. We will include US sales tac into the final price for the shopper to pay.</div>
+                    
+                    <div class="content-title">Message shopper</div>
+                    <textarea class="ip_input " style="margin-bottom:15px; height:100px;">Hi! I�m traveling from United State, US to Ho Chi Minh City, VN. I�ll keep you up-to-date about your order and will coordinate a time and place to met closer to delivery.</textarea>
+                    <div style="display: flex;">
+                        <div>
+                            <img src="img/icon/ic_uncheck.png" alt="">
+                        </div>
+                        <div style="color:#828282; font-size:16px;padding-top:4px; margin-left:10px;">By making a delivery offer, I agree to TradeZ�s Terms and Conditions and acknowledge that I am familiar with and agree to abide by the customs rules and regulations of my destination country. I also acknowledge that I am responsible
+                            for paying customs duties and incurring any loses that may incur at customs in my destination country.</div>
+                    </div>
+                    <div class="buttons">
+                        <a class="btn btn-light " role="button" href="?page=addTrip_Step3" style="width: 100%; margin-top: 15px;margin-bottom: 15px; height:40px">Make delivery offer</a>
+                    </div>
                 </div>
                 <div class="col-md-4 ">
-                    <div class="panel-top ">
-                        <a href=" ">Buy Simple Mobie - Apple iPhone 11 Pro (64KB) - Space Gray from Amazon.s</a><br>
-                        <img class="product_image" src="img/images/im_iphone11_ebay.png" alt="">
-                        <input type="text " value=" ">
-
-                        <br>
-                        <a class="title " href=" ">Product price   </a>
-                        <a class="inside " href=" ">$ 400</a><br>
-                        <a class="title " href=" ">Your delivery reward   </a>
-                        <a class="inside " href=" ">$ 5</a><br>
-                        <input type="text " value=" ">
-                        <a class="inside " href=" ">Total</a>
-                        <a href=" ">$ 410</a>
-
+                    <div class="panel-top" style="margin-bottom: 15px">
+                    <div style="display:flex;">
+                        <div>
+                        <a href=" ">Buy Simple Mobie - Apple iPhone 11 Pro (64KB) - Space Gray from Amazon</a><br>
+                        </div>
+                        <div>
+                        <img style="width:70px; height:100px; "src="img/images/im_product-detail.jpg" alt="">
+                        </div>
+                    
+                    </div>    
+                    <div class="title" style="color:#4c9fbf;" >
+                                <div>
+                                    Order details
+                                </div>
+                            </div>
+                   
+                      
+                        <hr>
+                     
+                        <div class="delivery-infor" style="display: flex">
+                            <div class="title" style="flex-grow:1">   Product price</div>
+                            <span class="inside" style="float:right;">$ 400.00</span>
+                        </div>
+                        <div class="delivery-infor" style="display: flex">
+                            <div class="title" style="flex-grow:1">Your delivery reward</div>
+                            <span class="inside" style="float:right;">$ 10.00</span>
+                        </div>
+                        
+                        <hr>
+                        <div style="display: flex">
+                            <div class="inside" style="margin-right:10px;flex-grow:1;margin: auto 0px;">Total</div>
+                            <div style="font-weight: bold;font-size:24px">$410.00</div>
+                        </div>
+                        
                     </div>
-                    <div class="panel-top " style="margin-top:15px ">
-                        <a class="inside" href=" ">FAQ about making offer.</a>
-                        <input type="text " value=" ">
-                        <a class="title-1" href=" ">How it works: from making delivery offers to getting paid.</a>
-                        <br>
-                        <a class="title-1" href=" ">Why must I buy this item with my own money?</a>
-                        <br>
-                        <a class="title-1" href=" ">Information about customs
-                                What are customs fees? Do I need to collect or pay them?</a>
-                        <br> <a class="title-1" href=" ">Can I cancel my delivery offer?</a>
-                        <br> <a class="title-1" href=" ">Need more help?</a>
-
+                    <div class="panel-top" style="margin-bottom:15px">
+                        <img src="img/icon/ic_idea.png" alt="">
+                        <span class="title" style="color:#000;" href="">FAQ about making offer</span>
+                        <hr>
+                        <div class="title" style="color:#4c9fbf;">How it works: from making delivery offers to getting paid.</div>
+                        <hr>
+                        <div class="title" style="color:#4c9fbf;">Why must I buy this item with my own money?</div>
+                        <hr>
+                        <div class="title" style="color:#4c9fbf;">Information about customs.</div>
+                        <hr>
+                        <div class="title" style="color:#4c9fbf;">What are customs fees? Do I need to collect or pay them?</div>
                     </div>
                 </div>
-
             </div>
-
-
         </div>
-
+    </div>
 </body>
-
-</html>
+</html> 

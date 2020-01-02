@@ -965,7 +965,7 @@
                             <div style="font-weight: bold;font-size:24px">$400.00</div>
                         </div>
                         <div class="buttons">
-                            <a class="btn btn-light" role="button" href="?page=createOrder_Step4">Pay $450.02</a>
+                            <a class="btn btn-light" role="button" href="?page=createOrder_Step8">Pay $450.02</a>
                         </div>
                         <hr>
                         <div style="color: green; font-size: 15px">

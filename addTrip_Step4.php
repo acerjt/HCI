@@ -1,11 +1,12 @@
 <html>
 
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- <base href="https://bootstrapstudio.io/demo/" bs-system-element="" bs-hidden=""> -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Untitled</title>
-    <link rel="stylesheet" href="bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="bootstrap.min.css"> -->
     <style bs-system-element="" bs-hidden="">
         html::-webkit-scrollbar {
             height: 7px;
@@ -52,35 +53,33 @@
             background-repeat: no-repeat;
         }
         /* Stopping css animations on the stage */
-        
-        *:not([bs-anim-preview]) {
+        /* *:not([bs-anim-preview]) {
             transition: none !important;
             transition-duration: 0s !important;
-        }
+        } */
         
         [bs-dragged] {
             opacity: 0.3 !important;
         }
         /* Inline editing */
-        
-        [contenteditable=true] {
+        /* [contenteditable=true] {
             box-shadow: -1px -1px 1px rgba(17, 142, 232, 0.85), 1px 1px 1px rgba(17, 142, 232, 0.85), 0 0 11px rgba(17, 142, 232, 0.85) !important;
             outline: none !important;
             min-height: 1em;
             cursor: initial !important;
         }
-        
+
         [contenteditable=true] *:not([contenteditable=false]) {
             cursor: initial !important;
         }
-        
+
         [contenteditable=true]:empty:before {
             content: "\00a0\00a0" !important;
         }
-        
+
         [contenteditable=true] [contenteditable=false] {
             box-shadow: 0 0 0 1px rgba(17, 142, 232, 0.85);
-        }
+        } */
         /* Preventing mouse events for embeds */
         
         iframe,
@@ -221,6 +220,7 @@
     <link rel="stylesheet" href="animate.min.css" bs-system-element="" bs-hidden="">
     <link rel="stylesheet" href="aos.min.css" bs-system-element="" bs-hidden="">
     <link rel="stylesheet" bs-hidden="1" bs-system-element="1" href="fontawesome-all.min.css">
+    <link rel="stylesheet" bs-hidden="1" bs-system-element="1" href="process-bar.min.css">
     <link rel="stylesheet" bs-hidden="1" bs-system-element="1" href="font-awesome.min.css">
     <link rel="stylesheet" bs-hidden="1" bs-system-element="1" href="ionicons.min.css">
     <link rel="stylesheet" bs-hidden="1" bs-system-element="1" href="line-awesome.min.css">
@@ -228,7 +228,6 @@
     <link rel="stylesheet" bs-hidden="1" bs-system-element="1" href="simple-line-icons.min.css">
     <link rel="stylesheet" bs-hidden="1" bs-system-element="1" href="typicons.min.css">
     <link rel="stylesheet" href="fontawesome5-overrides.min.css" bs-system-element="" bs-hidden="">
-
     <style>
         .highlight-phone {
             color: #313437;
@@ -339,31 +338,32 @@
             opacity: 0.2;
         }
         
-        .content .container .row .col-md-12 .panel-content {
+        .content .container .row .col-md-8 .panel-content {
+            padding-left: 15px;
+            background-color: #fff;
+            padding-top: 15px;
+            padding-right: 15px;
+            padding-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #e0e0e0;
+            /* width: 700px;
+            height: 400px; */
+            margin-bottom: 15px;
+        }
+        
+        .content .container .row .col-md-8 .panel-choose-offer {
             padding-left: 15px;
             background-color: #fff;
             padding-top: 15px;
             border-radius: 5px;
             border: 1px solid #e0e0e0;
-            width: 750px;
-            height: 950px;
+            /* width: 700px; */
+            /* height: 100px; */
             margin-bottom: 15px;
             margin-top: 15px;
         }
         
-        .content .container .row .col-md-12 .panel-choose-offer {
-            padding-left: 15px;
-            background-color: #fff;
-            padding-top: 15px;
-            border-radius: 5px;
-            border: 1px solid #e0e0e0;
-            width: 700px;
-            height: 100px;
-            margin-bottom: 15px;
-            margin-top: 15px;
-        }
-        
-        .content .container .row .col-md-12 .panel-request-delivery {
+        .content .container .row .col-md-8 .panel-request-delivery {
             margin-bottom: 15px;
             margin-top: 50px;
             padding-left: 15px;
@@ -371,29 +371,39 @@
             padding-top: 15px;
             border-radius: 5px;
             border: 1px solid #e0e0e0;
-            width: 700px;
-            height: 460px;
+            /* width: 700px; */
+            /* height: 460px; */
         }
         
-        .content .container .row .col-md-12 a {
+        .content .container .row .col-md-8 div {
             color: #000;
             font-size: 20px;
         }
         
-        .content .container .row .col-md-12 .des {
+        .content .container .row .col-md-8 .des {
             color: #828282;
             margin-top: 0px;
             font-size: 15px;
         }
         
-        .content .container .row .col-md-12 .ip_input {
-            padding-left: 10px;
+        .content .container .row .col-md-8 .parse {
+            margin-top: 5px;
             margin-bottom: 15px;
+            padding-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #4c9fbf;
+            height: 40px;
+            width: 500px;
+            text-align: center;
+        }
+        
+        .content .container .row .col-md-8 .ip_input {
+            padding-left: 10px;
             border-radius: 5px;
             border: 1px solid #f2f2f2;
             background-color: #f2f2f2;
             height: 40px;
-            width: 500px;
+            width: 100%;
             margin-top: 5px;
         }
         
@@ -406,12 +416,12 @@
             margin-left: 15px;
         }
         
-        .content .container .row .col-md-12 .container .row img {
+        .content .container .row .col-md-8 .container .row img {
             width: 100px;
             height: 100px;
         }
         
-        .content .container .row .col-md-12 .product_image {
+        .content .container .row .col-md-8 .product_image {
             margin-top: 5px;
             margin-bottom: 5px;
             width: 200px;
@@ -420,7 +430,7 @@
             border-radius: 5px;
         }
         
-        .content .container .row .col-md-12 .reload_button {
+        .content .container .row .col-md-8 .reload_button {
             background-color: #4c9fbf;
             width: 40px;
             height: 40px;
@@ -429,28 +439,29 @@
             margin-bottom: 5px;
         }
         
-        .content .container .row .col-md-12 .name {
+        .content .container .row .col-md-8 .name {
             font-size: 20px;
             color: black;
             font-weight: bold;
         }
-        
-        .content .container .row .col-md-4 .panel-top {
+        /* .content .container .row .col-md-4 .panel-top {
             background-color: #fff;
             padding-top: 15px;
             padding-left: 15px;
             border-radius: 5px;
             border: 1px solid #e0e0e0;
-            height: 400px;
-        }
+            height: 330px;
+        } */
         
         .content .container .row .col-md-4 .panel-bottom {
             background-color: #fff;
             padding-top: 15px;
             padding-left: 15px;
+            padding-bottom: 15px;
+            padding-right: 15px;
             border-radius: 5px;
             border: 1px solid #e0e0e0;
-            height: 160px;
+            /* height: 120px;*/
         }
         
         .content .container .row .col-md-4 a {
@@ -460,17 +471,16 @@
         }
         
         .content .container .row .col-md-4 .title {
-            font-size: 15px;
+            font-size: 16px;
             color: #828282;
             font-weight: normal;
             padding-right: 10px;
         }
-        
-        .content .container .row .col-md-4 .inside {
-            font-size: inherit;
+        /* .content .container .row .col-md-4 .inside {
+            font-size: 15px;
             color: black;
             font-weight: normal;
-        }
+        } */
         
         .content .container .row .col-md-4 input {
             background-color: #f2f2f2;
@@ -487,15 +497,15 @@
             border: 0.1px solid #f2f2f2;
             margin-top: 15px;
             margin-bottom: 15px;
-            width: 500px;
+            width: 300px;
         }
         
-        .content .container .row .col-md-12 .quantity img {
+        .content .container .row .col-md-8 .quantity img {
             width: 22px;
             height: 22px;
         }
         
-        .content .container .row .col-md-12 .long {
+        .content .container .row .col-md-8 .long {
             width: 500px;
             height: 60px;
             background-color: #f2f2f2;
@@ -503,61 +513,49 @@
             border-radius: 5px;
         }
         
-        .content .container .row .col-md-12 .panel {
+        .content .container .row .col-md-8 .panel {
             margin-top: 5px;
-            width: 300px;
-            height: 80px;
+            /* width: 300px;
+            height: 80px; */
+            font-size: 20px;
             background-color: #f2f2f2;
             border: 1px solid #f2f2f2;
             border-radius: 5px;
-            padding-left: 5px;
-            padding-top: 5px;
+            padding: 16px 16px;
         }
         
-        .content .container .row .col-md-12 .panel .title {
+        .content .container .row .col-md-8 .panel .title {
             font-size: 15px;
             color: #828282;
             font-weight: normal;
             padding-right: 10px;
         }
         
-        .content .container .row .col-md-12 .panel .inside {
+        .content .container .row .col-md-8 .panel .inside {
             font-size: 15px;
             color: black;
             font-weight: normal;
         }
         
-        .content .container .row .col-md-12 .long .recommend {
+        .content .container .row .col-md-8 .long .recommend {
             font-size: 15px;
             color: #27ae60;
         }
         
         .btn-primary {
-            margin-top: 15px;
+            /* margin-top: 15px; */
             color: #fff;
             background-color: #4c9fbf;
             border-color: #4c9fbf;
         }
         
         .content .container .row .col-md-4 .buttons a {
-            font-size: 15px;
+            font-size: 20px;
             font-weight: normal;
+            /* height: 40px; */
+            width: 100%;
             color: #fff;
-        }
-        
-        .content .container .row .col-md-4 img {
-            max-width: 40px;
-            float: left;
-            margin-left: -6px;
-            margin-top: -5px;
-        }
-        
-        .content .container .row .col-md-12 .panel-content .rounded-circle {
-            max-width: 40px;
-            float: left;
-            margin-left: 5px;
-            margin-right: 5px;
-            margin-top: 5px;
+            text-align: center;
         }
         
         .btn-primary:hover {
@@ -572,284 +570,279 @@
             border-color: #3f89a8;
         }
         
-        .content .container .row .col-md-12 .panel-request-delivery .request .name {
+        .content .container .row .col-md-8 .panel-request-delivery .request .name,
+        .content .container .row .col-md-8 .panel-content .request .dropdown-item:active {
             font-size: 15px;
             font-weight: bold;
             color: #000;
         }
         
-        .content .container .row .col-md-12 .panel-request-delivery .request {
-            margin-top: 15px;
-            margin-left: 15px;
+        .content .container .row .col-md-8 .panel-request-delivery .request,
+        .content .container .row .col-md-8 .panel-content .request {
+            /* margin-top: 15px;
+            margin-left: 15px; */
+            padding: 10px 10px;
+            display: flex;
         }
         
-        .content .container .row .col-md-12 .panel-request-delivery .request img {
+        .content .container .row .col-md-8 .panel-request-delivery .request img,
+        .content .container .row .col-md-8 .panel-content .request img {
             max-width: 50px;
             float: left;
-            margin-right: 15px;
         }
         
-        .content .container .row .col-md-12 .panel-request-delivery .request .name {
+        .content .container .row .col-md-8 .panel-request-delivery .request .name,
+        .content .container .row .col-md-8 .panel-content .request .name {
             font-size: 20px;
         }
         
-        .content .container .row .col-md-12 .panel-request-delivery .request .time {
+        .content .container .row .col-md-8 .panel-request-delivery .request .time,
+        .content .container .row .col-md-8 .panel-content .request .time {
             font-size: 15px;
             color: #828282;
         }
         
-        .content .container .row .col-md-12 .panel-request-delivery .request .btn-primary {
+        .content .container .row .col-md-8 .panel-request-delivery .request .btn-primary,
+        .btn-send-message,
+        .content .container .row .col-md-8 .panel-content .request .btn-primary {
             color: #4c9fbf;
             background-color: #fff;
             border-color: #3f89a8;
             font-size: 15px;
         }
         
-        .content .container .row .col-md-12 .panel-request-delivery .request .btn-primary:hover {
+        .content .container .row .col-md-8 .panel-request-delivery .request .btn-primary:hover,
+        .btn-send-message:hover,
+        .content .container .row .col-md-8 .panel-content .request .btn-primary:hover {
             color: #fff;
             background-color: #3f89a8;
             border-color: #3f89a8;
             font-size: 15px;
         }
         
-        .content .container .row .col-md-12 .panel-content .panel-payment {
-            margin-top: 5px;
-            width: 500px;
-            height: 460px;
-            background-color: #fff;
-            border: 1px solid #828282;
-            border-radius: 5px;
-            padding-left: 15px;
-            padding-top: 5px;
-            margin-bottom: 15px;
-        }
-        
-        a {
-            font-size: 20px;
-            color: #000;
-        }
-        
-        .img-payment {
-            width: 470px;
-            padding-left: 0px;
-            padding-top: 5px;
-            padding-bottom: 15px;
-        }
-        
-        .content .container .row .col-md-4 .des {
-            font-size: 13px;
-            font-weight: normal;
-        }
-        
-        .content .container .row .col-md-12 h4 {
+        .content .container .row .col-md-8 h4 {
             font-size: 25px;
         }
         
-        .content .container .row .col-md-12 .input .parse {
-            height: 35px;
-            overflow: hidden;
-            border-style: none;
-            border-color: #f2f2f2;
-            border-image: none;
-            font-size: 16px;
-            background-color: #f2f2f2;
-            padding-left: 5px;
+        .head {
+            background-color: #fff;
+            height: 100px;
+            padding-top: 15px;
         }
         
-        .content .container .row .col-md-12 .input {
-            border: 1px solid #f2f2f2;
-            background-color: #f2f2f2;
-            width: 500px;
-            height: 40px;
-            font-size: 16px;
-            padding-left: 5px;
+        .content .container .row .col-md-4 .panel-top {
+            background-color: #fff;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 15px;
+            padding-right: 15px;
             border-radius: 5px;
+            border: 1px solid #e0e0e0;
+        }
+        
+        @media(min-width:576px) {
+            .travel-ava {
+                margin: 12px 133px;
+            }
+            .col-md-4 {
+                padding: unset;
+            }
+            .delivery-container {
+                display: flex;
+            }
+            .delivery-infor {
+                margin: auto;
+            }
+        }
+        
+        @media (min-width: 768px) {
+            .col-md-8 {
+                -webkit-box-flex: 0;
+                -ms-flex: 0 0 66.666667%;
+                flex: 0 0 52%;
+                max-width: 66.666667%;
+                /* margin-left: 100px; */
+            }
+            .travel-ava {
+                margin: 12px 38px;
+            }
+            .col-md-4 {
+                padding-right: 15px;
+                padding-left: 15px;
+            }
+            .delivery-container {
+                display: initial;
+            }
+        }
+        
+        .col-md-8 {
+            padding: unset;
+        }
+        
+        .content .container .row .col-md-4 .buttons {
+            margin-top: 15px;
             margin-bottom: 15px;
         }
         
-        .content .container .row .col-md-12 .btn_create {
-            padding: 3px 220px;
+        .content .container .row .col-md-4 img:first-child {
+            /* max-width: 40px; */
+            /* float: left; */
+            /* margin-left: -6px; */
+            margin-left: 0px;
         }
         
-        .btn_create {
-            padding: 5px 32px;
-            text-align: center;
-            margin-left: 15px;
-            height: 40px;
-            margin: 10px;
-            border: 1px solid #4c9fbf;
-            border-radius: 5px;
-            background: #4c9fbf;
-            box-shadow: none;
-            text-shadow: none;
-            opacity: 0.9;
-            font-size: 16px;
-            text-transform: uppercase;
-            color: #fff;
-            text-transform: none;
-            letter-spacing: 0.4px;
-            line-height: 1;
-            outline: none;
-            background-color: #4c9fbf;
+        .content .container .row .col-md-4 img {
+            max-width: 40px;
+            /* float: left; */
+            margin-left: -16px;
+            /* margin-top: -5px; */
         }
         
-        .btn_create:hover {
-            background-color: #3f89a8;
-            border-bottom: none;
+        .btn-accept {
+            border-radius: 5px !important;
+            color: #fff !important;
+            box-shadow: none !important;
+            text-shadow: none !important;
+            background: #4c9fbf !important;
+            outline: none !important;
+            transition: 0.3s !important;
         }
         
-       .container {
-            width: 100%;
-            position: absolute;
-            z-index: 1;
-            margin-bottom: 15px;
+        .btn-accept:not(:disabled):not(.disabled).active,
+        .btn-accept:not(:disabled):not(.disabled):active {
+            color: #000 !important;
+            background-color: #4c9fbf !important;
+            border-color: #d3d9df !important;
+        }
+        
+        .btn-accept:hover {
+            background-color: #3f89a8 !important;
         }
         
         .progressbar li {
             float: left;
-            width: 20%;
+            color: #4c9fbf;
             position: relative;
+            width: 33.3333%;
             text-align: center;
             list-style-type: none;
         }
         
-        .progressbar li:before {
-            content: "1";
-            width: 30px;
-            height: 30px;
-        }
-        
-        .progressbar li:before {
-            content: "1";
-            width: 30px;
-            height: 30px;
-            border: 2px solid #bebebe;
-            display: block;
-            margin: 0 auto 10px auto;
-            border-radius: 50%;
-            line-height: 27px;
-            background: white;
-            color: #bebebe;
-            text-align: center;
-            font-weight: bold;
-        }
-        
-        .progressbar {
-            counter-reset: step;
-        }
-        
-        .progressbar li:before {
-            content: counter(step);
-            counter-increment: step;
-            width: 30px;
-            height: 30px;
-            border: 2px solid #bebebe;
-            display: block;
-            margin: 0 auto 10px auto;
-            border-radius: 50%;
-            line-height: 27px;
-            background: white;
-            color: #bebebe;
-            text-align: center;
-            font-weight: bold;
-        }
-        
-        .progressbar li:after {
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 3px;
-            background: #979797;
-            top: 15px;
-            left: -50%;
-            z-index: -1;
-        }
-        
-        .progressbar li:first-child:after {
-            content: none;
-        }
-        
-        .content {
-            margin-top: 15px;
-        }
-        
-        .root {
-            margin-top: 15px;
-        }
-        
-        /* .progressbar li.active+li:after {
-            background: #4c9fbf;
-        }
-        
-        .progressbar li.active+li:before {
+        .progressbar li.active:before {
             border-color: #4c9fbf;
+            background-color: #4c9fbf;
+            background: url(img/icon/ic_checked.png);
+            background-repeat: no-repeat;
+            color: transparent;
+            background-position: 50% 50%;
+        }
+        
+        .progressbar li.active+li:after {
             background: #4c9fbf;
-            color: white
-        } */
+        }
+        
+        .progressbar li.fly:before {
+            border-color: #4c9fbf;
+            background-color: #4c9fbf;
+            background: url(img/icon/ic_fly.png);
+            background-repeat: no-repeat;
+            color: transparent;
+            background-position: 50% 50%;
+        }
+        
+        .progressbar li.fly {
+            color: #4c9fbf;
+        }
     </style>
     <style></style>
     <style bs-system-element="" bs-hidden=""></style>
 </head>
 
 <body style="background-color: #f2f2f2;">
-
-    <div class="root">
+    <div class="head">
         <div class="container">
-            <ul class="progressbar">
-                <li class="active">Step 1</li>
-                <li>Step 2</li>
-                <li>Step 3</li>
-                <li>Step 4</li>
-                <li>Step 5</li>
-            </ul>
+            <div class="row ">
+
+                <div class="root">
+                    <div class="container">
+
+                        <ul class="progressbar">
+                            <li class="active">Verify phone number</li>
+                            <li class="fly">Payout method</li>
+                            <li style="color:#bdbdbd">Verify completed</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
+
     </div>
 
 
     <div class="content" style="margin-top:15px">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12">
+            <div class="row align-items-center">
+                <div class="col-md-8">
                     <div class="panel-content">
-                        <h4>Payout</h4>
+                        <h3 style="font-weight: 500">Payout</h3>
+                        <div>
+                            <div style="font-size:15px; color:#828282">
+                                TradeZ supports direct bank tranfers to the US and foreign bank accounts if you live in another city.
+                            </div>
+                            <div class="ip_input" style="display: flex;  padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;">
+                                <div style="margin-right:30px;">
+                                    Your Country
+                                </div>
+                                <div contenteditable="true" style="flex-grow:1">
+                                    VietNam
+                                </div>
+                            </div>
+                        </div>
+                        <div style="margin-top:15px;color:#828282">
+                            PAYOUT OPTION AVAIABLE
+                        </div>
+                        <div style="border: 1px solid #e0e0e0; padding: 15px 16px">
+                            <div style="display: flex">
+                                <div style="flex-grow: 1">
+                                    International credit card
+                                </div>
+                                <div style="color: #828282;">
+                                    USD
+                                </div>
+                            </div>
+                            <div>
+                                <img style="width:100%" class="img-payment" src="img/images/im_payment.png" alt="">
+                            </div>
+                            <div style="margin-top:15px;">Card number</div>
+                            <div>
+                                <input class="ip_input" type="text" placeholder="Enter your card number">
+                            </div>
+                            <div style="margin-top:15px;">Expiration</div>
+                            <div>
+                                <input class="ip_input" type="text" placeholder="MM/YY">
 
+                            </div>
+                            <div style="margin-top:15px;">Enter name as appears on your card</div>
+                            <div>
+                                <input class="ip_input" type="text" placeholder="Enter your name">
 
-                        <a class="des" href="">TradeZ supports direct bank tranfers to the US and foreign bank accounts if you live in another city.</a>
-                        <input class="ip_input" type="text" value="United State of America">
-                        <br>
-                        <!-- <div class="input">
+                            </div>
+                            <div style="margin-top:15px;">Country</div>
+                            <div>
+                                <input class="ip_input" type="text" placeholder="Enter your country">
+                            </div>
 
-                            <input class="parse" type="text" value="United State of America">
-                        </div> -->
-                        <a href="">PAYOUT OPTION AVAIABLE</a><br>
-
-
-                        <div class="panel-payment">
-                            <a href="">International credit card</a>
-                            <a class="des" href="">USD</a><br>
-                            <img class="img-payment" src="img/images/im_payment.png" alt="">
-                            <a href="">Card number</a>
-                            <input style="color:#828282; width:470px;" class="ip_input" type="text" value="Enter your card number">
-                            <a href="">Expiration</a>
-                            <input style="color:#828282; width:470px;" class="ip_input" type="text" value="MM/YY">
-                            <a href="">Enter name as appears on your card</a>
-                            <input style="color:#828282; width:470px;" class="ip_input" type="text" value="Enter your card number">
-                            <a href="">Country</a>
-                            <input style="color:#828282; width:470px;" class="ip_input" type="text" value="Country">
+                            
 
                         </div>
-                        <a href="">Price summary</a>
-                        <div class="panel">
-                            <a class="title" href="">Price product   </a>
-                            <a class="inside" style="text-align: right">$ 400</a><br>
-                            <a class="title" href="">US Sale tax</a>
-                            <a class="inside" href="">$ 35.2</a><br>
-                            <a class="title" href="">International Delivery fee</a>
-                            <a class="inside" href="">$ 15</a><br>
-                        </div>
-                        <button class="btn_create" type="button" href="#">Accept</button>
-
+                        <div class="buttons">
+                                <a class="btn btn-light " role="button " href="?page=addTrip_Step5" style="width: 100%; margin-top: 15px; height:40px">Make delivery offer</a>
+                            </div>
                     </div>
+
 
 
 
@@ -857,10 +850,26 @@
 
 
             </div>
-
         </div>
     </div>
-    </div>
 </body>
+<script>
+    $(".detail-price").click(function() {
+
+        $detailPrice = $(this);
+        //getting the next element
+        $content = $detailPrice.next();
+        //open up the content needed - toggle the slide- if visible, slide up, if not slidedown.
+        $content.slideToggle(500, function() {
+            //execute this after slideToggle is done
+            //change text of header based on visibility of content div
+            /* $header.text(function () {
+                //change text based on condition
+                return $content.is(":visible") ? "Collapse" : "Expand";
+            }); */
+        });
+
+    });
+</script>
 
 </html>
